@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,211 @@
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="vendor/flaticon/flaticon.css">
 
     <!--Main CSS File-->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <button class="btn btn-primary">Click me</button>
+    <!--Nav Section Start-->
+    <section id="nav_bar">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img width="200" class="img-fluid" src="img/logo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="#about">About</a>
+                        <a class="nav-item nav-link" href="#services">Services</a>
+                        <a class="nav-item nav-link" href="#works">Works</a>
+                        <a class="nav-item nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--Nav Section End-->
+
+    <!--Header Section Start-->
+    <section id="header" class="section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="hero_heading_hello mb-3"><span class="text-primary">Hello</span></h1>
+                    <h1 class="hero_heading_name mb-3">I'm <span class="text-primary">Fahim</span></h1>
+                    <h1 class="hero_heading_title mb-3">Web Developer</h1>
+                    <p class="little_about_me py-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero doloribus ipsam architecto
+                        tempora ea magnam quo deserunt earum consequatur reiciendis.
+                    </p>
+                    <div class="call_to_action">
+                        <a href="#" class="btn btn-primary mr-4">See My Works</a>
+                        <a href="#" class="btn btn-outline-primary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="hero-img">
+                        <img width="" src="img/owner_image.png" alt="" class="img-fluid d-none d-md-block">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    
+    </section>
+    <!--Header Section End-->
+
+    <!--About Section Start-->
+    <section id="about" class="section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <h2 class="section_heading text-center">About Me</h2>
+                </div>
+                <div class="col-md-5">
+                    <div class="about_img">
+                        <img width="90%" src="img/owner_image.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <ul class="nav nav-pills mb-5" id="pills-tab">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#about_me">
+                                About Me
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#skills">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#experience">
+                                Experience
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#education">
+                                Education
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="about_me">
+                            <p class="about_me_title">Hi I'm Full Stack Web Developer</p>
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore possimus cum esse aut alias sint at ut earum, quod quam, tempora sed fuga illum? A! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore possimus cum esse aut alias sint at ut earum, quod quam, tempora sed fuga illum? A!</p>
+                            <div class="about_me_btn">
+                                <a href="#" class="btn btn-outline-primary">Download CV</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="skills">
+                            <div class="my_skill mb-3">
+                                <p>Html</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="my_skill mb-3">
+                                <p>Css</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="my_skill mb-3">
+                                <p>JavaScript</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="my_skill">
+                                <p>Php</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="experience">
+
+                        </div>
+
+                        <div class="tab-pane fade" id="education">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About Section End-->
+
+    <!--Services Section Start-->
+    <section id="services" class="section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <h2 class="section_heading text-center">What I Do</h2>
+                </div>
+
+                <div class="col-md-4 service_container">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="service_icon">
+                                <ion-icon name="color-palette-outline"></ion-icon>
+                            </div>
+                            <div class="service_content px-3">
+                                <h3 class="mt-3">Web Design</h3>
+                                <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, praesentium? Nihil eaque debitis aspernatur excepturi!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 service_container">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="service_icon">
+                                <ion-icon name="code-slash-outline"></ion-icon>
+                            </div>
+                            <div class="service_content px-3">
+                                <h3 class="mt-3">Web Development</h3>
+                                <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, praesentium? Nihil eaque debitis aspernatur excepturi!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 service_container">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="service_icon">
+                                <ion-icon name="bar-chart-outline"></ion-icon>
+                            </div>
+                            <div class="service_content px-3">
+                                <h3 class="mt-3">SEO</h3>
+                                <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, praesentium? Nihil eaque debitis aspernatur excepturi!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 custom_service mt-4">
+                    <p>Looking for a custom job? <strong><a href="#">Click Here</a></strong> to contact me! <i class="far fa-smile-beam"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Services Section End-->
+
 
 
 
@@ -47,7 +239,11 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- IonIcons Js -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
     <!-- Custom scripts for all pages-->
     <script src="js/main.js"></script>
 </body>
+
 </html>

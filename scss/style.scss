@@ -3,3 +3,18 @@
 
 // Import Bootstrap
 @import "../vendor/bootstrap/scss/bootstrap.scss";
+
+//Import Global Css
+@import "global.scss";
+
+//Import Navbar Css
+@import "navbar.scss";
+
+//Import Hero Css
+@import "hero.scss";
+
+//Import About Css
+@import "about.scss";
+
+//Import Services Css
+@import "services.scss";

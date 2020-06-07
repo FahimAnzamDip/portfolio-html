@@ -1,0 +1,29 @@
+#about {
+    background-color: #F9F7FC;
+
+    .about_me_title {
+        font-weight: 500;
+    }
+
+    .nav.nav-pills {
+        .nav-item {
+            margin-right: 1rem;
+
+            .nav-link {
+                color: #333333;
+                font-weight: 500;
+                padding: 0.5rem 1.3rem;
+                font-size: 0.9rem;
+                &.active {
+                    color: $theme-color;
+                    background-color: #ffffff;
+                    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.2);
+                }
+            }
+        }
+
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+    }
+}
