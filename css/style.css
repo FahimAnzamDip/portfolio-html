@@ -9597,6 +9597,15 @@ hr {
   color: inherit;
 }
 
+@media (max-width: 575.98px) {
+  #nav_bar .nav-item.nav-link {
+    text-align: center;
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
+
 #nav_bar .nav-item.nav-link.active {
   color: #744CA2;
 }
@@ -9609,6 +9618,13 @@ hr {
   background-color: #744CA2;
   bottom: 0;
   left: 0;
+}
+
+@media (max-width: 575.98px) {
+  #nav_bar .nav-item.nav-link.active::after {
+    width: 0;
+    height: 0;
+  }
 }
 
 #nav_bar .nav-item.nav-link::after {
@@ -9632,6 +9648,13 @@ hr {
   left: 0;
 }
 
+@media (max-width: 575.98px) {
+  #nav_bar .nav-item.nav-link:hover::after {
+    width: 0;
+    height: 0;
+  }
+}
+
 #header {
   display: flex;
   min-height: calc(100vh - 83px);
@@ -9643,9 +9666,21 @@ hr {
   font-size: 2.5rem;
 }
 
+@media (max-width: 575.98px) {
+  #header .hero_heading_hello {
+    font-size: 2rem;
+  }
+}
+
 #header .hero_heading_name {
   font-weight: 600;
   font-size: 3.7rem;
+}
+
+@media (max-width: 575.98px) {
+  #header .hero_heading_name {
+    font-size: 3rem;
+  }
 }
 
 #header .hero_heading_title {
@@ -9653,9 +9688,21 @@ hr {
   font-size: 3.7rem;
 }
 
+@media (max-width: 575.98px) {
+  #header .hero_heading_title {
+    font-size: 3rem;
+  }
+}
+
 #header .little_about_me {
   font-size: 0.9rem;
   line-height: 1.5rem;
+}
+
+@media (max-width: 575.98px) {
+  #header .call_to_action a {
+    margin-right: 1rem;
+  }
 }
 
 #about {
@@ -9668,6 +9715,12 @@ hr {
 
 #about .nav.nav-pills .nav-item {
   margin-right: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  #about .nav.nav-pills .nav-item {
+    margin-right: 0;
+  }
 }
 
 #about .nav.nav-pills .nav-item .nav-link {
@@ -9717,6 +9770,12 @@ hr {
 
 #services .card .card-body p {
   font-size: 0.9rem;
+}
+
+@media (max-width: 575.98px) {
+  #services .card {
+    margin-bottom: 1.7rem;
+  }
 }
 
 #services .service_icon img {
@@ -9805,6 +9864,12 @@ hr {
   width: 96%;
 }
 
+@media (max-width: 575.98px) {
+  #contact .form-group input.input_short {
+    width: 100%;
+  }
+}
+
 #contact .contact_note .contact_note_bottom p i {
   font-size: 1.2rem;
   color: #744CA2;
@@ -9812,7 +9877,6 @@ hr {
 
 #footer p {
   margin-bottom: 0;
-  padding-left: 0.8rem;
 }
 
 #footer .social_links ul {
@@ -9826,4 +9890,8 @@ hr {
 
 #footer .social_links ul li a {
   font-size: 1.5rem;
+}
+
+#footer .social_links ul li:last-child {
+  margin-right: 0;
 }

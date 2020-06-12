@@ -8,6 +8,13 @@
         position: relative;
         padding: 0 $mr-custom-nav 0.4rem 0;
         color: inherit;
+
+        @include mobile {
+            text-align: center;
+            margin-top: 1.3rem;
+            font-size: 1.2rem;
+            padding: 0;
+        }
     }
 
     .nav-item.nav-link.active {
@@ -22,6 +29,11 @@
         background-color: $theme-color;
         bottom: 0;
         left: 0;
+
+        @include mobile {
+            width: 0;
+            height: 0;
+        }
     }
 
     .nav-item.nav-link::after {
@@ -43,6 +55,12 @@
         background-color: $theme-color;
         bottom: 0;
         left: 0;
+
+        @include mobile {
+            width: 0;
+            height: 0;
+        }
+
     }
 
 }

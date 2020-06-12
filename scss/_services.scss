@@ -32,6 +32,10 @@
                 font-size: 0.9rem;
             }
         }
+
+        @include mobile {
+            margin-bottom: 1.7rem;
+        }
     }
 
     .service_icon img{

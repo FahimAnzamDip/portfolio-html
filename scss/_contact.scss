@@ -16,6 +16,10 @@
 
         input.input_short {
             width: 96%;
+
+            @include mobile {
+                width: 100%;
+            }
         }    
     }
 
@@ -29,5 +33,19 @@
             }
         }
     }
+
+    // @include mobile {
+    //     .order_section {
+    //         display: flex;
+    //     }
+
+    //     .order_down {
+    //         order: 2;
+    //     }
+
+    //     .order_up {
+    //         order: 1;
+    //     }
+    // }
 
 }

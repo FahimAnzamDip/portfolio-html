@@ -7,21 +7,41 @@
     .hero_heading_hello {
         font-weight: 600;
         font-size: 2.5rem;
+
+        @include mobile {
+            font-size: 2rem;
+        }
     }
 
     .hero_heading_name {
         font-weight: 600;
         font-size: 3.7rem;
+
+        @include mobile {
+            font-size: 3rem;
+        }
     }
 
     .hero_heading_title {
         font-weight: 600;
         font-size: 3.7rem;
+
+        @include mobile {
+            font-size: 3rem;
+        }
     }
 
     .little_about_me {
         font-size: 0.9rem;
         line-height: 1.5rem;
+    }
+
+    @include mobile {
+        .call_to_action {
+            a {
+                margin-right: 1rem;
+            }
+        }
     }
 
 }

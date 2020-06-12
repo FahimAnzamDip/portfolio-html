@@ -9,6 +9,10 @@
         .nav-item {
             margin-right: 1rem;
 
+            @include mobile {
+                margin-right: 0;
+            }
+
             .nav-link {
                 color: #333333;
                 font-weight: 500;

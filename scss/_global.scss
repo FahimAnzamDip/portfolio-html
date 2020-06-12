@@ -26,3 +26,9 @@ p {
 hr {
     margin: 0;
 }
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
