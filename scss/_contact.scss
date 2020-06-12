@@ -19,13 +19,15 @@
         }    
     }
 
-    .contact_form_button {
-        font-size: 0.9rem;
-        color: #ffffff;
-        background-color: $theme-color;
-        border: 0;
-        border-radius: 0.35rem;
-        padding: 0.8rem 1.7rem;
+    .contact_note {
+        .contact_note_bottom {
+            p {
+                i {
+                    font-size: 1.2rem;
+                    color: $theme-color;
+                }
+            }
+        }
     }
 
 }

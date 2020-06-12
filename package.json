@@ -2,7 +2,7 @@
     "name": "portfolio",
     "version": "1.0.0",
     "description": "Personal portfolio website.",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },

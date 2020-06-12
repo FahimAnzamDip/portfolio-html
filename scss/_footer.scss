@@ -1,0 +1,23 @@
+#footer {
+
+    p {
+        margin-bottom: 0;
+        padding-left: 0.8rem;
+    }
+
+    .social_links {
+        ul {
+            margin: 0;
+            
+            li {
+                list-style-type: none;
+                margin-right: 0.8rem;
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+}
