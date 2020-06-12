@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="80">
 
     <!--Nav Section Start-->
     <section id="nav_bar">
@@ -30,11 +30,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link active" href="index.html">Home</a>
+                        <a class="nav-item nav-link active" href="#home">Home</a>
                         <a class="nav-item nav-link" href="#about">About</a>
                         <a class="nav-item nav-link" href="#services">Services</a>
                         <a class="nav-item nav-link" href="#works">Works</a>
-                        <a class="nav-item nav-link" href="#contact">Contact</a>
+                        <a class="nav-item nav-link pr-0" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -49,14 +49,18 @@
                 <div class="col-md-6">
                     <h1 class="hero_heading_hello mb-3"><span class="text-primary">Hello,</span></h1>
                     <h1 class="hero_heading_name mb-3">I'm <span class="text-primary">Fahim,</span></h1>
-                    <h1 class="hero_heading_title mb-3">Web Developer.</h1>
+                    <h1 class="hero_heading_title mb-3 js--start-sticky-nav">Web Developer.</h1>
                     <p class="little_about_me py-3">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero doloribus ipsam architecto
                         tempora ea magnam quo deserunt earum consequatur reiciendis.
                     </p>
                     <div class="call_to_action">
-                        <a href="#works" class="btn btn-primary mr-sm-4">See My Works</a>
-                        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                        <a href="#works" class="btn btn-primary mr-sm-4">
+                            See My Works
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary">
+                            Contact Me
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -357,7 +361,8 @@
                     <div class="contact_note">
                         <div class="contact_note_top mb-5">
                             <h4>Let's Talk About Everything!</h4>
-                            <p>Don't like forms? Send me an <a href="javascript:void(0)">email</a>. <i class="far fa-smile-beam"></i></p>
+                            <p>Don't like forms? Send me an <a href="javascript:void(0)">email</a>. <i
+                                    class="far fa-smile-beam"></i></p>
                         </div>
 
                         <div class="contact_note_bottom mb-5">
@@ -371,21 +376,25 @@
                     <form action="" method="POST">
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input name="guest_name" type="text" class="form-control form-control-lg input_short" placeholder="Your Name">
+                                <input name="guest_name" type="text" class="form-control form-control-lg input_short"
+                                    placeholder="Your Name">
                             </div>
                             <div class="form-group col-md-6">
-                                <input name="guest_email" type="text" class="form-control form-control-lg" placeholder="Your Email">
+                                <input name="guest_email" type="text" class="form-control form-control-lg"
+                                    placeholder="Your Email">
                             </div>
                         </div>
                         <div class="form-group">
-                            <input name="guest_subject" type="text" class="form-control form-control-lg" placeholder="Subject">
+                            <input name="guest_subject" type="text" class="form-control form-control-lg"
+                                placeholder="Subject">
                         </div>
                         <div class="form-group">
                             <textarea class="form-control form-control-lg" name="guest_message" id="" rows="5"
                                 placeholder="Message"></textarea>
                         </div>
 
-                        <button class="btn btn-primary" type="submit" name="message_posted"><i class="fas fa-paper-plane"></i> Send</button>
+                        <button class="btn btn-primary" type="submit" name="message_posted"><i
+                                class="fas fa-paper-plane"></i> Send</button>
                     </form>
                 </div>
             </div>
@@ -397,18 +406,19 @@
     <hr>
     <footer id="footer" class="py-3">
         <div class="container">
-            <div class="row">
-                    <div class="footer_text col-md-6">
-                        <p class="text-sm-left text-center">Design & Developed By <strong>Fahim</strong>, All Rights Reserved &copy; 2020</p>
-                    </div>
-    
-                    <div class="social_links col-md-6">
-                        <ul class="d-flex justify-content-center justify-content-sm-end">
-                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                            <li><a href=""><i class="fab fa-github-square"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
+            <div class="row align-items-center">
+                <div class="footer_text col-md-6">
+                    <p class="text-sm-left text-center">Design & Developed By <strong>Fahim</strong>, All Rights
+                        Reserved &copy; 2020</p>
+                </div>
+
+                <div class="social_links col-md-6">
+                    <ul class="d-flex justify-content-center justify-content-sm-end">
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-github-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
@@ -444,6 +454,9 @@
 
     <!-- Smooth Scroll -->
     <script src="vendor/smooth-scroll/smooth-scroll.min.js"></script>
+
+    <!-- Waypoint JS -->
+    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/main.js"></script>

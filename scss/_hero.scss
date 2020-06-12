@@ -1,19 +1,15 @@
 #header {
 
     display: flex;
-    min-height: calc(100vh - 83px);
+    height: calc(100vh - 83px);
     align-items: center;
-
-    @include mobile {
-        min-height: 600px;
-    }
 
     .hero_heading_hello {
         font-weight: 600;
         font-size: 2.5rem;
 
         @include mobile {
-            font-size: 2rem;
+            font-size: 1.9rem;
         }
     }
 
@@ -22,7 +18,7 @@
         font-size: 3.7rem;
 
         @include mobile {
-            font-size: 3rem;
+            font-size: 2.8rem;
         }
     }
 
@@ -31,7 +27,7 @@
         font-size: 3.7rem;
 
         @include mobile {
-            font-size: 3rem;
+            font-size: 2.8rem;
         }
     }
 

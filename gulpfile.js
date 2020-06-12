@@ -67,6 +67,9 @@ function modules() {
   //Animate.css
   var animateCSS = gulp.src('./node_modules/animate.css/*.css')
     .pipe(gulp.dest('./vendor/animate.css'));
+  //waypoints JS
+  var waypointsJS = gulp.src('./node_modules/waypoints/lib/jquery.waypoints.min.js')
+  .pipe(gulp.dest('./vendor/waypoints'));
   // dataTables
 //   var dataTables = gulp.src([
 //       './node_modules/datatables.net/js/*.js',
@@ -93,7 +96,7 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll);
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS);
 }
 
 // CSS task

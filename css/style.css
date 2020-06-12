@@ -9560,7 +9560,9 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #333333;
+  position: relative;
   overflow-x: hidden;
+  transition: 0.2s all ease;
 }
 
 p {
@@ -9656,16 +9658,22 @@ hr {
   }
 }
 
-#header {
-  display: flex;
-  min-height: calc(100vh - 83px);
-  align-items: center;
+#nav_bar .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.97;
+  z-index: 9999;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.1rem 1rem;
 }
 
-@media (max-width: 575.98px) {
-  #header {
-    min-height: 500px;
-  }
+#header {
+  display: flex;
+  height: calc(100vh - 83px);
+  align-items: center;
 }
 
 #header .hero_heading_hello {
@@ -9675,7 +9683,7 @@ hr {
 
 @media (max-width: 575.98px) {
   #header .hero_heading_hello {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -9686,7 +9694,7 @@ hr {
 
 @media (max-width: 575.98px) {
   #header .hero_heading_name {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -9697,7 +9705,7 @@ hr {
 
 @media (max-width: 575.98px) {
   #header .hero_heading_title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
