@@ -9577,6 +9577,10 @@ p {
   font-weight: 600;
 }
 
+.portfolio_margin {
+  margin-bottom: 1.7rem;
+}
+
 #nav_bar {
   padding: 1rem 0;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
@@ -9715,4 +9719,93 @@ p {
   width: 130px;
   display: block;
   margin: 0 auto;
+}
+
+#works {
+  background-color: #F9F7FC;
+}
+
+#works .single-portfolio {
+  margin-bottom: 30px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+}
+
+#works .single-portfolio img {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+#works .single-portfolio .box-content {
+  width: 100%;
+  height: 170px;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.3s ease 0s;
+}
+
+#works .single-portfolio .box-content ul li {
+  list-style-type: none;
+}
+
+#works .single-portfolio .box-content ul li a:hover {
+  color: #ddd;
+}
+
+#works .single-portfolio .box-content .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+
+#works .single-portfolio .box-content .post {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#works .single-portfolio:hover .box-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#works .single-portfolio:hover img {
+  transform: scale(1.1);
+}
+
+#contact .form-group {
+  margin-bottom: 1.6rem;
+}
+
+#contact .form-group .form-control {
+  font-size: 0.9rem;
+  padding: 1.5rem 1.2rem;
+  border: 0;
+  border-radius: 0.35rem;
+  box-shadow: 0px 0px 10px rgba(116, 76, 162, 0.2);
+}
+
+#contact .form-group .form-control:focus {
+  border-bottom: 2px solid #744CA2;
+}
+
+#contact .form-group input.input_short {
+  width: 96%;
+}
+
+#contact .contact_form_button {
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #744CA2;
+  border: 0;
+  border-radius: 0.35rem;
+  padding: 0.8rem 1.7rem;
 }

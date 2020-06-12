@@ -74,6 +74,10 @@ function modules() {
 //       './node_modules/datatables.net-bs4/css/*.css'
 //     ])
 //     .pipe(gulp.dest('./vendor/datatables'));
+
+  // Smooth scroll js
+  var smoothScroll = gulp.src('./node_modules/smooth-scroll/dist/smooth-scroll.min.js')
+    .pipe(gulp.dest('./vendor/smooth-scroll'));
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./vendor'));
@@ -89,7 +93,7 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS);
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll);
 }
 
 // CSS task
