@@ -9664,7 +9664,7 @@ hr {
 
 @media (max-width: 575.98px) {
   #header {
-    min-height: 500px;
+    height: 500px;
   }
 }
 
