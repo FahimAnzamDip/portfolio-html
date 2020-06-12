@@ -9560,6 +9560,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #333333;
+  overflow-x: hidden;
 }
 
 p {
@@ -9659,6 +9660,12 @@ hr {
   display: flex;
   min-height: calc(100vh - 83px);
   align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  #header {
+    min-height: 600px;
+  }
 }
 
 #header .hero_heading_hello {
@@ -9770,12 +9777,6 @@ hr {
 
 #services .card .card-body p {
   font-size: 0.9rem;
-}
-
-@media (max-width: 575.98px) {
-  #services .card {
-    margin-bottom: 1.7rem;
-  }
 }
 
 #services .service_icon img {

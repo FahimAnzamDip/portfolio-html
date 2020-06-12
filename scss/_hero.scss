@@ -4,6 +4,10 @@
     min-height: calc(100vh - 83px);
     align-items: center;
 
+    @include mobile {
+        min-height: 600px;
+    }
+
     .hero_heading_hello {
         font-weight: 600;
         font-size: 2.5rem;
