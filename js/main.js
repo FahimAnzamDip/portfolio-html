@@ -22,7 +22,9 @@ $(document).ready(function () {
 		function (direction) {
 			if (direction == "down") {
 				$(".go_to_top").addClass("d-flex");
+				$(".go_to_top").removeClass("d-none");
 			} else {
+				$(".go_to_top").addClass("d-none");
 				$(".go_to_top").removeClass("d-flex");
 			}
 		}, {
