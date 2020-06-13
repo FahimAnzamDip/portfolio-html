@@ -31,4 +31,12 @@ $(document).ready(function () {
 			offset: "80px"
 		}
 	);
+
+	var typed = new Typed("#typed", {
+		strings: ["Developer.", "Designer."],
+		backSpeed: 30,
+		typeSpeed: 50,
+		loop: true,
+		backDelay: 3000
+	});
 });

@@ -52,21 +52,27 @@ function modules() {
   // Bootstrap JS
   var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/*')
     .pipe(gulp.dest('./vendor/bootstrap/js'));
+
   // Bootstrap SCSS
   var bootstrapSCSS = gulp.src('./node_modules/bootstrap/scss/**/*')
     .pipe(gulp.dest('./vendor/bootstrap/scss'));
+
   // ChartJS
 //   var chartJS = gulp.src('./node_modules/chart.js/dist/*.js')
 //     .pipe(gulp.dest('./vendor/chart.js'));
+
   // SweetAlert2 JS
   var sweetAlertJS = gulp.src('./node_modules/sweetalert2/dist/*.js')
     .pipe(gulp.dest('./vendor/sweetalert/js'));
+
   // SweetAlert2 JS
   var sweetAlertCSS = gulp.src('./node_modules/sweetalert2/dist/*.css')
     .pipe(gulp.dest('./vendor/sweetalert/css'));
+
   //Animate.css
   var animateCSS = gulp.src('./node_modules/animate.css/*.css')
     .pipe(gulp.dest('./vendor/animate.css'));
+
   //waypoints JS
   var waypointsJS = gulp.src('./node_modules/waypoints/lib/jquery.waypoints.min.js')
   .pipe(gulp.dest('./vendor/waypoints'));
@@ -81,22 +87,31 @@ function modules() {
   // Smooth scroll js
   var smoothScroll = gulp.src('./node_modules/smooth-scroll/dist/smooth-scroll.min.js')
     .pipe(gulp.dest('./vendor/smooth-scroll'));
+
+  // Typed js
+  var typedJS = gulp.src('./node_modules/typed.js/lib/typed.min.js')
+  .pipe(gulp.dest('./vendor/typedjs'));
+
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./vendor'));
+
   // Font Awesome
   var parsleyJS = gulp.src('./node_modules/parsleyjs/dist/*.js')
     .pipe(gulp.dest('./vendor/parsleyjs'));
+
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
+
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS);
+
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS);
 }
 
 // CSS task
