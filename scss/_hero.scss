@@ -1,7 +1,7 @@
 #header {
 
     display: flex;
-    height: calc(100vh - 83px);
+    min-height: calc(100vh - 83px);
     align-items: center;
 
     .hero_heading_hello {

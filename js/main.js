@@ -16,4 +16,17 @@ $(document).ready(function () {
 			offset: "80px"
 		}
 	);
+
+	//Go To Top
+	$(".js--start-go-top").waypoint(
+		function (direction) {
+			if (direction == "down") {
+				$(".go_to_top").addClass("d-flex");
+			} else {
+				$(".go_to_top").removeClass("d-flex");
+			}
+		}, {
+			offset: "80px"
+		}
+	);
 });

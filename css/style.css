@@ -9588,6 +9588,23 @@ hr {
   margin: 0;
 }
 
+.go_to_top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: linear-gradient(0deg, #4e1486 23%, #a330d4 68%);
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  opacity: 0.8;
+}
+
+.go_to_top ion-icon {
+  margin-top: 5px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
 #nav_bar {
   padding: 1rem 0;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
@@ -9665,14 +9682,14 @@ hr {
   width: 100%;
   background-color: #ffffff;
   opacity: 0.97;
-  z-index: 9999;
+  z-index: 1;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
   padding: 1.1rem 1rem;
 }
 
 #header {
   display: flex;
-  height: calc(100vh - 83px);
+  min-height: calc(100vh - 83px);
   align-items: center;
 }
 
