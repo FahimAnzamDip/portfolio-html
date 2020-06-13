@@ -9907,6 +9907,13 @@ hr {
 
 #footer .social_links ul {
   margin: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 575.98px) {
+  #footer .social_links ul {
+    margin-top: 0.85rem;
+  }
 }
 
 #footer .social_links ul li {

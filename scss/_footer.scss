@@ -7,7 +7,12 @@
 
         ul {
             margin: 0;
+            padding-left: 0;
             
+            @include mobile {
+                margin-top: 0.85rem;
+            }
+
             li {
                 list-style-type: none;
                 margin-right: 0.8rem;
