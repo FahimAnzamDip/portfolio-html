@@ -40,5 +40,9 @@ $(document).ready(function () {
 		backDelay: 3000
 	});
 
-	sal(); 
+	//Scroll Animation
+	sal({
+		rootMargin: '35% 50%',
+		once: false,
+	}); 
 });

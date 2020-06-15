@@ -9566,7 +9566,7 @@ body {
 }
 
 p {
-  color: #868686;
+  color: #6e7373;
   line-height: 1.7rem;
   font-size: 0.95rem;
   font-weight: 400;
@@ -9620,7 +9620,7 @@ hr {
 @media (max-width: 575.98px) {
   #nav_bar .nav-item.nav-link {
     text-align: center;
-    margin-top: 1.3rem;
+    margin-top: 1.8rem;
     font-size: 1.2rem;
     padding: 0;
   }
@@ -9687,6 +9687,12 @@ hr {
   padding: 1.1rem 1rem;
 }
 
+@media (max-width: 575.98px) {
+  #nav_bar .sticky {
+    padding: 1.4rem 1rem;
+  }
+}
+
 #header {
   display: flex;
   min-height: calc(100vh - 83px);
@@ -9727,7 +9733,6 @@ hr {
 }
 
 #header .little_about_me {
-  font-size: 0.9rem;
   line-height: 1.5rem;
 }
 
