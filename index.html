@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Sal.js CSS -->
+    <link rel="stylesheet" href="vendor/sal.js/sal.css">
+
     <!--Main CSS File-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,18 +46,17 @@
     <!--Nav Section End-->
 
     <!--Header Section Start-->
-    <section id="header" class="section_gap">
+    <section id="header" class="section_gap" data-sal="fade" data-sal-duration="500">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="hero_heading_hello mb-3"><span class="text-primary">Hello,</span></h1>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-7">
+                    <!-- <h1 class="hero_heading_hello mb-3"><span class="text-primary">Hello,</span></h1> -->
                     <h1 class="hero_heading_name mb-3">I'm <span class="text-primary">Fahim,</span></h1>
                     <h1 class="hero_heading_title mb-3 js--start-sticky-nav">
                         Web <span id="typed"></span>
                     </h1>
                     <p class="little_about_me py-3">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero doloribus ipsam architecto
-                        tempora ea magnam quo deserunt earum consequatur reiciendis.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident impedit magni obcaecati! Aliquam, ut deleniti!
                     </p>
                     <div class="call_to_action">
                         <a href="#works" class="btn btn-primary mr-sm-4">
@@ -65,18 +67,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="hero-img">
-                        <img width="" src="img/owner_image.png" alt="" class="img-fluid d-none d-md-block">
-                    </div>
-                </div>
             </div>
         </div>
     </section>
     <!--Header Section End-->
 
     <!--About Section Start-->
-    <section id="about" class="section_gap js--start-go-top">
+    <section id="about" class="section_gap js--start-go-top" data-sal="fade" data-sal-duration="500">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-5">
@@ -171,7 +168,7 @@
     <!--About Section End-->
 
     <!--Services Section Start-->
-    <section id="services" class="section_gap">
+    <section id="services" class="section_gap" data-sal="fade" data-sal-duration="500">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-5">
@@ -232,7 +229,7 @@
     <!--Services Section End-->
 
     <!-- Portfolio Section Start -->
-    <section id="works" class="section_gap">
+    <section id="works" class="section_gap" data-sal="fade" data-sal-duration="500">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-5">
@@ -350,7 +347,7 @@
     <!-- Portfolio Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="section_gap">
+    <section id="contact" class="section_gap" data-sal="fade" data-sal-duration="500">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-5">
@@ -466,6 +463,9 @@
 
     <!-- Typed JS -->
     <script src="vendor/typedjs/typed.min.js"></script>
+
+    <!-- Sal.js JS -->
+    <script src="vendor/sal.js/sal.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/main.js"></script>

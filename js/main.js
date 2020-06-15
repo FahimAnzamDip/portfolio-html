@@ -39,4 +39,8 @@ $(document).ready(function () {
 		loop: true,
 		backDelay: 3000
 	});
+
+	sal({
+		once: false
+	}); 
 });

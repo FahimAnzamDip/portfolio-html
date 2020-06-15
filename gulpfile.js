@@ -73,6 +73,16 @@ function modules() {
   var animateCSS = gulp.src('./node_modules/animate.css/*.css')
     .pipe(gulp.dest('./vendor/animate.css'));
 
+    
+  //Animate.css
+  var salCSS = gulp.src('./node_modules/sal.js/dist/sal.css')
+  .pipe(gulp.dest('./vendor/sal.js'));
+
+  
+  //Animate.css
+  var salJS = gulp.src('./node_modules/sal.js/dist/sal.js')
+    .pipe(gulp.dest('./vendor/sal.js'));
+
   //waypoints JS
   var waypointsJS = gulp.src('./node_modules/waypoints/lib/jquery.waypoints.min.js')
   .pipe(gulp.dest('./vendor/waypoints'));
@@ -111,7 +121,7 @@ function modules() {
     ])
     .pipe(gulp.dest('./vendor/jquery'));
 
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS);
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS, salCSS, salJS);
 }
 
 // CSS task
