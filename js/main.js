@@ -40,7 +40,5 @@ $(document).ready(function () {
 		backDelay: 3000
 	});
 
-	sal({
-		once: false
-	}); 
+	sal(); 
 });
