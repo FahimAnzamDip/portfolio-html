@@ -14,6 +14,11 @@
             border-bottom: 2px solid $theme-color;
         }
 
+        label {
+            font-size: 0.92rem;
+            font-weight: 500;
+        }
+
         input.input_short {
             width: 96%;
 
