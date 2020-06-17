@@ -9755,7 +9755,7 @@ hr {
 }
 
 #about {
-  background-color: #F9F7FC;
+  background-color: #f9f9ff;
 }
 
 #about .about_me_title {
@@ -9827,10 +9827,6 @@ hr {
   margin: 0 auto;
 }
 
-#works {
-  background-color: #F9F7FC;
-}
-
 #works .single-portfolio {
   margin-bottom: 30px;
   text-align: center;
@@ -9891,6 +9887,10 @@ hr {
   transform: scale(1.1);
 }
 
+#contact {
+  background-color: #f9f9ff;
+}
+
 #contact .form-group {
   margin-bottom: 1.6rem;
 }
@@ -9900,7 +9900,7 @@ hr {
   padding: 1.5rem 1.2rem;
   border: 0;
   border-radius: 0.35rem;
-  box-shadow: 0px 0px 10px rgba(116, 76, 162, 0.2);
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
 #contact .form-group .form-control:focus {
