@@ -9922,6 +9922,12 @@ hr {
   }
 }
 
+#contact .contact_note {
+  background: url(../img/map_bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #contact .contact_note .contact_note_bottom p i {
   font-size: 1.2rem;
   color: #744CA2;
