@@ -20,6 +20,19 @@ p {
 
 .section_heading {
     font-weight: 600;
+    position: relative;
+}
+
+.section_heading::before {
+    content: "";
+    background-image: url(../img/dots-bg.svg);
+    display: block;
+    height: 30px;
+    left: -17px;
+    top: -5px;
+    position: absolute;
+    width: 37px;
+    
 }
 
 .portfolio_margin {
