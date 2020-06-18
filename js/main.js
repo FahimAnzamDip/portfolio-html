@@ -42,7 +42,23 @@ $(document).ready(function () {
 
 	//Scroll Animation
 	sal({
-		rootMargin: '35% 50%',
+		rootMargin: '38% 50%',
 		once: false,
 	}); 
+
+	//Porfolio Filter
+	$('.filter_btn').click(function () { 
+		var value = $(this).attr('data-filter');
+		if (value == 'all') {
+			$('.filter').show(300);
+		} 
+		else {
+			$('.filter').not('.' + value).hide(300);
+			$('.filter').filter('.' + value).show(300);
+		}
+	 });
+
+	 $('ul li').click(function () { 
+		 $(this).addClass('active').siblings().removeClass('active');
+	  });
 });
