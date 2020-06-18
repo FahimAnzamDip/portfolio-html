@@ -9828,22 +9828,22 @@ hr {
   margin: 0 auto;
 }
 
-#works ul li {
+#works .filter_nav li {
   margin-right: 1.3rem;
 }
 
-#works ul li.active .filter_btn {
+#works .filter_nav li.active .filter_btn {
   background-color: #744CA2;
   color: #fff;
   box-shadow: 0px 0px 10px rgba(116, 76, 162, 0.2);
 }
 
-#works ul li:last-child {
+#works .filter_nav li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575.98px) {
-  #works ul ul {
+  #works .filter_nav ul {
     padding-left: 1rem;
     padding-right: 1rem;
   }

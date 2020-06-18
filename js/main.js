@@ -47,7 +47,9 @@ $(document).ready(function () {
 	}); 
 
 	//Porfolio Filter
-	$('.filter_btn').click(function () { 
+	$('.filter_btn').click(function (e) { 
+		e.preventDefault();
+		
 		var value = $(this).attr('data-filter');
 		if (value == 'all') {
 			$('.filter').show(300);
