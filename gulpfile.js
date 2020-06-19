@@ -69,6 +69,14 @@ function modules() {
   var sweetAlertCSS = gulp.src('./node_modules/sweetalert2/dist/*.css')
     .pipe(gulp.dest('./vendor/sweetalert/css'));
 
+  // Owl Carousel JS
+  var owlJS = gulp.src('./node_modules/owl.carousel/dist/owl.carousel.min.js')
+    .pipe(gulp.dest('./vendor/owl/js'));
+
+  // Owl Carousel JS
+  var owlCSS = gulp.src('./node_modules/owl.carousel/dist/assets/*.min.css')
+    .pipe(gulp.dest('./vendor/owl/css'));
+
   //Animate.css
   var animateCSS = gulp.src('./node_modules/animate.css/*.css')
     .pipe(gulp.dest('./vendor/animate.css'));
@@ -121,7 +129,7 @@ function modules() {
     ])
     .pipe(gulp.dest('./vendor/jquery'));
 
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS, salCSS, salJS);
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS, salCSS, salJS, owlCSS, owlJS);
 }
 
 // CSS task

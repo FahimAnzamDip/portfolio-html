@@ -44,23 +44,46 @@ $(document).ready(function () {
 	sal({
 		rootMargin: '38% 50%',
 		once: false,
-	}); 
+	});
 
 	//Porfolio Filter
-	$('.filter_btn').click(function (e) { 
+	$('.filter_btn').click(function (e) {
 		e.preventDefault();
-		
+
 		var value = $(this).attr('data-filter');
 		if (value == 'all') {
 			$('.filter').show(300);
-		} 
-		else {
+		} else {
 			$('.filter').not('.' + value).hide(300);
 			$('.filter').filter('.' + value).show(300);
 		}
-	 });
+	});
 
-	 $('ul li').click(function () { 
-		 $(this).addClass('active').siblings().removeClass('active');
-	  });
+	$('ul li').click(function () {
+		$(this).addClass('active').siblings().removeClass('active');
+	});
+
+	//Owl Carosel
+	$(".owl-carousel").owlCarousel({
+		loop: true,
+		margin: 30,
+		responsiveClass: true,
+		stagePadding: 20,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+				autoplay: false
+			},
+			600: {
+				items: 2,
+			},
+			1000: {
+				items: 3,
+			}
+		},
+		nav: false,
+	});
 });

@@ -9566,6 +9566,10 @@ body {
   font-display: swap;
 }
 
+button:focus {
+  outline: none;
+}
+
 p {
   color: #6e7373;
   line-height: 1.7rem;
@@ -9695,7 +9699,7 @@ hr {
   width: 100%;
   background-color: #ffffff;
   opacity: 0.97;
-  z-index: 1;
+  z-index: 9999;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
   padding: 1.1rem 1rem;
 }
@@ -9808,9 +9812,31 @@ hr {
   color: #744CA2;
 }
 
+#services .owl-stage-outer {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+#services .owl-dots {
+  margin-bottom: 1rem;
+}
+
+#services .owl-dots .owl-dot span {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+#services .owl-dots .owl-dot.active span {
+  background: #744CA2;
+}
+
+#services .owl-item {
+  box-shadow: 0px 0px 15px rgba(221, 221, 221, 0.8);
+  border-radius: 0.5rem;
+}
+
 #services .card {
   border: 0;
-  box-shadow: 0px 0px 15px rgba(221, 221, 221, 0.8);
   border-radius: 0.5rem;
 }
 

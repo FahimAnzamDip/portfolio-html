@@ -8,6 +8,10 @@ body {
     font-display: swap;
 }
 
+button:focus {
+    outline: none;
+}
+
 p {
     color: #6e7373;
     line-height: 1.7rem;

@@ -18,9 +18,34 @@
         }
     }
 
+    .owl-stage-outer {
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .owl-dots {
+        margin-bottom: 1rem;
+
+        .owl-dot {
+            span {
+                width: 0.9rem;
+                height: 0.9rem;
+            }
+            &.active {
+                span {
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+
+    .owl-item {
+        box-shadow: 0px 0px 15px rgba($color: #ddd, $alpha: 0.8);
+        border-radius: 0.5rem;
+    }
+
     .card {
         border: 0;
-        box-shadow: 0px 0px 15px rgba($color: #ddd, $alpha: 0.8);
         border-radius: 0.5rem;
 
         .card-body {
