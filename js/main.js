@@ -86,4 +86,8 @@ $(document).ready(function () {
 		},
 		nav: false,
 	});
+
+	particlesJS.load('particles-js', 'vendor/particles/particles.json', function() {
+		console.log('callback - particles.js config loaded');
+	});
 });

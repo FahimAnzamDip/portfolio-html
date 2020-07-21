@@ -114,9 +114,13 @@ function modules() {
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./vendor'));
 
-  // Font Awesome
+  // Parsly JS
   var parsleyJS = gulp.src('./node_modules/parsleyjs/dist/*.js')
     .pipe(gulp.dest('./vendor/parsleyjs'));
+
+  // Particles JS
+  var particlesJS = gulp.src('./node_modules/particles.js/particles.js')
+  .pipe(gulp.dest('./vendor/particles'));
 
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
@@ -129,7 +133,7 @@ function modules() {
     ])
     .pipe(gulp.dest('./vendor/jquery'));
 
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS, salCSS, salJS, owlCSS, owlJS);
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS, salCSS, salJS, owlCSS, owlJS, particlesJS);
 }
 
 // CSS task
