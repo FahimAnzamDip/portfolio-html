@@ -1,8 +1,25 @@
 $(document).ready(function () {
-	//Initialize Smooth Scrolling
-	var scroll = new SmoothScroll('a[href*="#"]', {
-		speed: 500
-	});
+	//Parallax Animation
+	document.addEventListener('mousemove', parallax);
+	function parallax(e) {
+		this.querySelectorAll('.layer').forEach(layer => {
+			const speed = layer.getAttribute('data-speed');
+
+			const x = (window.innerWidth - e.pageX*speed)/300;
+			const y = (window.innerHeight - e.pageY*speed)/300;
+
+			layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+		});
+	}
+
+	//Smooth Scrolling
+	$('a[href^="#"]:not([href="#"]').on('click', function(event) {
+		var $anchor = $(this);
+		$('html, body').stop().animate({
+		  scrollTop: $($anchor.attr('href')).offset().top
+		}, 700, 'easeInOutQuad');
+		event.preventDefault();
+	  });
 
 	//Sticky Navbar
 	$(".js--start-sticky-nav").waypoint(
