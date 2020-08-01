@@ -133,7 +133,7 @@ function modules() {
     ])
     .pipe(gulp.dest('./vendor/jquery'));
 
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS, salCSS, salJS, owlCSS, owlJS, particlesJS);
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS, salCSS, salJS, owlCSS, owlJS);
 }
 
 // CSS task

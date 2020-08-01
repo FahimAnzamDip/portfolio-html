@@ -43,7 +43,6 @@ $(document).ready(function () {
 	//Scroll Animation
 	sal({
 		rootMargin: '38% 50%',
-		once: false,
 	});
 
 	//Porfolio Filter
@@ -87,7 +86,7 @@ $(document).ready(function () {
 		nav: false,
 	});
 
-	particlesJS.load('particles-js', 'vendor/particles/particles.json', function() {
-		console.log('callback - particles.js config loaded');
-	});
+	// particlesJS.load('particles-js', 'vendor/particles/particles.json', function() {
+	// 	console.log('callback - particles.js config loaded');
+	// });
 });
