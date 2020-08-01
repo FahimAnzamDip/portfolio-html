@@ -9614,6 +9614,7 @@ hr {
   height: 40px;
   width: 40px;
   opacity: 0.8;
+  z-index: 99;
 }
 
 .go_to_top ion-icon {
