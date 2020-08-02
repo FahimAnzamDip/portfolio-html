@@ -1,7 +1,5 @@
-/*!
- * Portfolio -  v1.0.0 ()
- * Copyright 2020-2020 Fahim Anzam Dip
- * Licensed under MIT (https://github.com/BlackrockDigital/portfolio/blob/master/LICENSE)
+/*
+ * Portfolio -  v1.0.0
  */
 
 /*!
@@ -9617,8 +9615,8 @@ hr {
   z-index: 99;
 }
 
-.go_to_top i.fas {
-  font-size: 1.1rem;
+.go_to_top i {
+  font-size: 1.7rem;
   color: #ffffff;
 }
 
@@ -9944,7 +9942,7 @@ svg {
   text-align: center;
 }
 
-#services .service_icon i.fas {
+#services .service_icon i {
   font-size: 60px;
   color: #744CA2;
   margin-top: 1.1rem;
