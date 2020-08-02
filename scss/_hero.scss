@@ -117,8 +117,27 @@
             li {
                 margin-right: 1.2rem;
                 a {
+                    color: #353353;
+
                     i {
                         font-size: 1.7rem;
+                        transition: 0.2s all ease;
+                    }
+
+                    i.fa-facebook-square:hover {
+                        color: #3C5A99;
+                    }
+
+                    i.fa-github-square:hover {
+                        color: #323131;
+                    }
+
+                    i.fa-linkedin:hover {
+                        color: #0077B5;
+                    }
+
+                    i.fa-twitter-square:hover {
+                        color: #1DA1F2;
                     }
                 }
             }

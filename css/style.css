@@ -9843,8 +9843,29 @@ svg {
   margin-right: 1.2rem;
 }
 
+#header .little_about_me ul li a {
+  color: #353353;
+}
+
 #header .little_about_me ul li a i {
   font-size: 1.7rem;
+  transition: 0.2s all ease;
+}
+
+#header .little_about_me ul li a i.fa-facebook-square:hover {
+  color: #3C5A99;
+}
+
+#header .little_about_me ul li a i.fa-github-square:hover {
+  color: #323131;
+}
+
+#header .little_about_me ul li a i.fa-linkedin:hover {
+  color: #0077B5;
+}
+
+#header .little_about_me ul li a i.fa-twitter-square:hover {
+  color: #1DA1F2;
 }
 
 #header .little_about_me ul li:last-child {
