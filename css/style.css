@@ -9617,9 +9617,8 @@ hr {
   z-index: 99;
 }
 
-.go_to_top ion-icon {
-  margin-top: 5px;
-  font-size: 1.5rem;
+.go_to_top i.fas {
+  font-size: 1.1rem;
   color: #ffffff;
 }
 
@@ -9945,10 +9944,10 @@ svg {
   text-align: center;
 }
 
-#services ion-icon {
-  font-size: 100px;
+#services .service_icon i.fas {
+  font-size: 60px;
   color: #744CA2;
-  font-weight: 500;
+  margin-top: 1.1rem;
 }
 
 #services .custom_service p {
@@ -9993,6 +9992,7 @@ svg {
 
 #services .card .card-body p {
   font-size: 0.9rem;
+  margin-bottom: 0;
 }
 
 #services .service_icon img {
