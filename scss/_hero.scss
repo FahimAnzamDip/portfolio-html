@@ -24,6 +24,10 @@
         .p2 {
             left: 25%;
             top: 30%;
+            
+            @include mobile {
+                top: 21%;
+            }
         }
 
         .p3 {

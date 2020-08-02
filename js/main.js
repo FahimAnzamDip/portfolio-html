@@ -1,19 +1,14 @@
 $(document).ready(function () {
 	//Parallax Animation
-	document.addEventListener('mousemove', parallax);
-	function parallax(e) {
-		this.querySelectorAll('.layer').forEach(layer => {
-			const speed = layer.getAttribute('data-speed');
-
-			const x = (window.innerWidth - e.pageX*speed)/200;
-			const y = (window.innerHeight - e.pageY*speed)/250;
-
-			layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-		});
-	}
+     if ($('.parallax').length > 0) { 
+      var scene = $('.parallax').get(0);
+      var parallax = new Parallax(scene, { 
+        relativeInput: true,
+      });
+    }
 
 	//Smooth Scrolling
-	$('a[href^="#"]:not([href="#"]').on('click', function(event) {
+	$('a[href^="#"]:not([href="#"], a[href="#skills"], a[href="#about_me"], a[href="#experience"], a[href="#education"])').on('click', function(event) {
 		var $anchor = $(this);
 		$('html, body').stop().animate({
 		  scrollTop: $($anchor.attr('href')).offset().top
@@ -102,8 +97,4 @@ $(document).ready(function () {
 		},
 		nav: false,
 	});
-
-	// particlesJS.load('particles-js', 'vendor/particles/particles.json', function() {
-	// 	console.log('callback - particles.js config loaded');
-	// });
 });

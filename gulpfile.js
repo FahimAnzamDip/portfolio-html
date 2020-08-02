@@ -62,12 +62,12 @@ function modules() {
 //     .pipe(gulp.dest('./vendor/chart.js'));
 
   // SweetAlert2 JS
-  var sweetAlertJS = gulp.src('./node_modules/sweetalert2/dist/*.js')
-    .pipe(gulp.dest('./vendor/sweetalert/js'));
+  // var sweetAlertJS = gulp.src('./node_modules/sweetalert2/dist/*.js')
+  //   .pipe(gulp.dest('./vendor/sweetalert/js'));
 
   // SweetAlert2 JS
-  var sweetAlertCSS = gulp.src('./node_modules/sweetalert2/dist/*.css')
-    .pipe(gulp.dest('./vendor/sweetalert/css'));
+  // var sweetAlertCSS = gulp.src('./node_modules/sweetalert2/dist/*.css')
+  //   .pipe(gulp.dest('./vendor/sweetalert/css'));
 
   // Owl Carousel JS
   var owlJS = gulp.src('./node_modules/owl.carousel/dist/owl.carousel.min.js')
@@ -82,12 +82,12 @@ function modules() {
     .pipe(gulp.dest('./vendor/animate.css'));
 
     
-  //Animate.css
+  //Sal CSS
   var salCSS = gulp.src('./node_modules/sal.js/dist/sal.css')
   .pipe(gulp.dest('./vendor/sal.js'));
 
   
-  //Animate.css
+  //Sal JS
   var salJS = gulp.src('./node_modules/sal.js/dist/sal.js')
     .pipe(gulp.dest('./vendor/sal.js'));
 
@@ -103,8 +103,8 @@ function modules() {
 //     .pipe(gulp.dest('./vendor/datatables'));
 
   // Smooth scroll js
-  var smoothScroll = gulp.src('./node_modules/smooth-scroll/dist/smooth-scroll.min.js')
-    .pipe(gulp.dest('./vendor/smooth-scroll'));
+  // var smoothScroll = gulp.src('./node_modules/smooth-scroll/dist/smooth-scroll.min.js')
+  //   .pipe(gulp.dest('./vendor/smooth-scroll'));
 
   // Typed js
   var typedJS = gulp.src('./node_modules/typed.js/lib/typed.min.js')
@@ -115,12 +115,12 @@ function modules() {
     .pipe(gulp.dest('./vendor'));
 
   // Parsly JS
-  var parsleyJS = gulp.src('./node_modules/parsleyjs/dist/*.js')
-    .pipe(gulp.dest('./vendor/parsleyjs'));
+  // var parsleyJS = gulp.src('./node_modules/parsleyjs/dist/*.js')
+  //   .pipe(gulp.dest('./vendor/parsleyjs'));
 
   // Particles JS
-  var particlesJS = gulp.src('./node_modules/particles.js/particles.js')
-  .pipe(gulp.dest('./vendor/particles'));
+  // var particlesJS = gulp.src('./node_modules/particles.js/particles.js')
+  // .pipe(gulp.dest('./vendor/particles'));
 
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
@@ -133,7 +133,11 @@ function modules() {
     ])
     .pipe(gulp.dest('./vendor/jquery'));
 
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, sweetAlertJS, sweetAlertCSS, animateCSS, parsleyJS, smoothScroll, waypointsJS, typedJS, salCSS, salJS, owlCSS, owlJS);
+  // Parallax js
+  var parallaxJS = gulp.src('./node_modules/parallax-js/dist/parallax.min.js')
+    .pipe(gulp.dest('./vendor/parallax'));
+
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, waypointsJS, typedJS, salCSS, salJS, owlCSS, owlJS, animateCSS, parallaxJS);
 }
 
 // CSS task
