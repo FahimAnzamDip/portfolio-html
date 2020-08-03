@@ -9562,6 +9562,7 @@ body {
   overflow-x: hidden;
   transition: 0.2s all ease;
   font-display: swap;
+  background-color: #ffffff;
 }
 
 button:focus {
@@ -9628,6 +9629,8 @@ svg {
 #nav_bar {
   padding: 1rem 0;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background-color: #F9F9FF;
 }
 
 #nav_bar .nav-item.nav-link {
@@ -9700,7 +9703,7 @@ svg {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #F9F9FF;
   opacity: 0.97;
   z-index: 9999;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
@@ -9726,6 +9729,7 @@ svg {
   top: 0;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
 #header .parallax .layer {
@@ -9945,7 +9949,10 @@ svg {
 #services .service_icon i {
   font-size: 60px;
   color: #744CA2;
-  margin-top: 1.1rem;
+}
+
+#services .service_container .card .card-body {
+  padding: 2rem 1.25rem;
 }
 
 #services .custom_service p {
@@ -9966,12 +9973,15 @@ svg {
 }
 
 #services .owl-dots .owl-dot span {
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1.2rem;
+  height: 0.4rem;
+  transition: 0.2s all ease-out;
+  border-radius: 0.20rem;
 }
 
 #services .owl-dots .owl-dot.active span {
-  background: #744CA2;
+  width: 1.5rem;
+  background-color: #744CA2;
 }
 
 #services .owl-item {
@@ -10150,6 +10160,19 @@ svg {
 #contact .contact_note .contact_note_bottom p i {
   font-size: 1.2rem;
   color: #744CA2;
+}
+
+#contact .contact_note .contact_note_bottom .contact_info div h6 {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+#contact .contact_note .contact_note_bottom .contact_info div p {
+  margin-bottom: 0;
+}
+
+#contact .contact_note .contact_note_bottom .contact_info span i {
+  font-size: 1.3rem;
 }
 
 #footer p {

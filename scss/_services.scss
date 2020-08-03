@@ -6,7 +6,14 @@
         i {
             font-size: 60px;
             color: $theme-color;
-            margin-top: 1.1rem;
+        }
+    }
+
+    .service_container {
+        .card {
+            .card-body {
+                padding: 2rem 1.25rem;
+            }
         }
     }
 
@@ -30,12 +37,15 @@
 
         .owl-dot {
             span {
-                width: 0.9rem;
-                height: 0.9rem;
+                width: 1.2rem;
+                height: 0.4rem;
+                transition: 0.2s all ease-out;
+                border-radius: 0.20rem;
             }
             &.active {
                 span {
-                    background: $theme-color;
+                    width: 1.5rem;
+                    background-color: $theme-color;
                 }
             }
         }

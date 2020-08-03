@@ -40,21 +40,25 @@
                     color: $theme-color;
                 }
             }
+
+            .contact_info {
+                div {
+                    h6 {
+                        font-size: 1.1rem;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                span {
+                    i {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
         }
     }
-
-    // @include mobile {
-    //     .order_section {
-    //         display: flex;
-    //     }
-
-    //     .order_down {
-    //         order: 2;
-    //     }
-
-    //     .order_up {
-    //         order: 1;
-    //     }
-    // }
-
 }
