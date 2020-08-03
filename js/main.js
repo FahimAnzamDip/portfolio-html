@@ -1,20 +1,20 @@
 $(document).ready(function () {
 	//Parallax Animation
-     if ($('.parallax').length > 0) { 
-      var scene = $('.parallax').get(0);
-      var parallax = new Parallax(scene, { 
-        relativeInput: true,
-      });
-    }
+	if ($('.parallax').length > 0) {
+		var scene = $('.parallax').get(0);
+		var parallax = new Parallax(scene, {
+			relativeInput: true,
+		});
+	}
 
 	//Smooth Scrolling
-	$('a[href^="#"]:not([href="#"], a[href="#skills"], a[href="#about_me"], a[href="#experience"], a[href="#education"])').on('click', function(event) {
+	$('a[href^="#"]:not([href="#"], a[href="#skills"], a[href="#about_me"], a[href="#experience"], a[href="#education"])').on('click', function (event) {
 		var $anchor = $(this);
 		$('html, body').stop().animate({
-		  scrollTop: $($anchor.attr('href')).offset().top
+			scrollTop: $($anchor.attr('href')).offset().top
 		}, 700, 'easeInOutQuad');
 		event.preventDefault();
-	  });
+	});
 
 	//Sticky Navbar
 	$(".js--start-sticky-nav").waypoint(
@@ -97,4 +97,5 @@ $(document).ready(function () {
 		},
 		nav: false,
 	});
+
 });

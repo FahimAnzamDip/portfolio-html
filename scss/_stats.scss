@@ -1,0 +1,26 @@
+#stats {
+    background-color: #F9F9FF;
+
+    .stat-item {
+        span {
+            i {
+                color: #DEDEEA;
+            }
+        }
+
+        @include mobile {
+            margin-bottom: 1.5rem;
+        }
+
+        .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #353353;
+
+            em {
+                font-style: normal;
+            }
+        }
+    }
+
+}

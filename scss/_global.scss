@@ -11,6 +11,12 @@ body {
 
 button:focus {
     outline: none;
+    box-shadow: none !important;
+}
+
+a.btn:active, a.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
 }
 
 p {
@@ -27,6 +33,7 @@ p {
 .section_heading {
     font-weight: 600;
     position: relative;
+    font-size: 2.2rem;
 }
 
 .section_heading::before {
