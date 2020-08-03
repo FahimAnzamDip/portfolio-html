@@ -9723,6 +9723,15 @@ svg {
   }
 }
 
+#nav_bar .navbar-toggler {
+  border: 0;
+}
+
+#nav_bar .navbar-toggler i {
+  font-size: 2rem;
+  color: #744CA2;
+}
+
 #header {
   display: flex;
   min-height: calc(100vh - 83px);

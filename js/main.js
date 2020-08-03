@@ -29,6 +29,12 @@ $(document).ready(function () {
 		}
 	);
 
+	//Onclick icon change in navbar
+	$("#menuBar").click(function(){
+		$('#bars').toggleClass('d-none');
+		$('#cross').toggleClass('d-none');
+	});
+
 	//Go To Top
 	$(".js--start-go-top").waypoint(
 		function (direction) {
