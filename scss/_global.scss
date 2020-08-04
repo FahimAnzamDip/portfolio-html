@@ -70,13 +70,32 @@ hr {
     border-radius: 100%;
     height: 40px;
     width: 40px;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 99;
+    animation: goToTopBounceIn ease 0.5s;
     i {
         font-size: 1.7rem;
         color: #ffffff;
     }
 }
+
+@keyframes goToTopBounceIn {
+    0% { 
+       opacity: 0; 
+       transform: scale(.3);
+    }
+    50% { 
+       opacity: 0.9;
+       transform: scale(1.05);
+    }
+    70% {
+       transform: scale(.9);
+    }
+    100% {
+       transform: scale(1);
+    }
+} 
+ 
 
 svg {
     overflow: hidden;
