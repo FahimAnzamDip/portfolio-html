@@ -75,11 +75,21 @@
         z-index: 9999;
         box-shadow: 0 2px 10px 0 rgba(5,5,5,0.15);
         padding: 1.1rem 1rem;
+        animation: navFadeIn 0.5s;
 
         @include mobile {
             padding: 1.4rem 1rem; 
         }
       }
+
+    @keyframes navFadeIn {
+        0% {
+            opacity:0;
+        }
+        100% {
+            opacity:0.97;
+        }
+    }
 
       .navbar-toggler {
           border: 0;
