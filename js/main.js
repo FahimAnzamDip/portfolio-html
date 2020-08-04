@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 	//Parallax Animation
 	if ($('.parallax').length > 0) {
 		var scene = $('.parallax').get(0);
@@ -30,9 +31,15 @@ $(document).ready(function () {
 	);
 
 	//Onclick icon change in navbar
-	$("#menuBar").click(function(){
+	$("#menu_btn").click(function(){
 		$('#bars').toggleClass('d-none');
 		$('#cross').toggleClass('d-none');
+	});
+
+	//Counter Up Stats
+	$('.count').counterUp({
+		delay: 10,
+		time: 2000
 	});
 
 	//Go To Top
@@ -58,27 +65,37 @@ $(document).ready(function () {
 		backDelay: 3000
 	});
 
-	//Scroll Animation
-	sal({
-		rootMargin: '38% 50%',
-	});
+	//Wow js Scroll Animation
+	var wow = new WOW(
+		{
+		  boxClass:     'wow',
+		  animateClass: 'animated',
+		  offset:       0,
+		}
+	  );
+	wow.init();
 
 	//Porfolio Filter
-	$('.filter_btn').click(function (e) {
-		e.preventDefault();
+	$('.portfolio-filter').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $container.isotope({ filter: filterValue });
+    });
 
-		var value = $(this).attr('data-filter');
-		if (value == 'all') {
-			$('.filter').show(300);
-		} else {
-			$('.filter').not('.' + value).hide(300);
-			$('.filter').filter('.' + value).show(300);
-		}
-	});
+    // change is-checked class on buttons
+    $('.portfolio-filter').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'li', function() {
+            $buttonGroup.find('.active').removeClass('active');
+            $( this ).addClass('active');
+        });
+    });
 
-	$('ul li').click(function () {
-		$(this).addClass('active').siblings().removeClass('active');
-	});
+    var $container = $('.portfolio-wrapper');
+    $('.portfolio-wrapper').isotope({
+        // options
+        itemSelector: '[class*="col-"]',
+        percentPosition: true
+    });
 
 	//Owl Carosel
 	$(".owl-carousel").owlCarousel({

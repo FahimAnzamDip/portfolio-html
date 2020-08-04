@@ -81,13 +81,13 @@ function modules() {
 
     
   //Sal CSS
-  var salCSS = gulp.src('./node_modules/sal.js/dist/sal.css')
-  .pipe(gulp.dest('./vendor/sal.js'));
+  // var salCSS = gulp.src('./node_modules/sal.js/dist/sal.css')
+  // .pipe(gulp.dest('./vendor/sal.js'));
 
   
   //Sal JS
-  var salJS = gulp.src('./node_modules/sal.js/dist/sal.js')
-    .pipe(gulp.dest('./vendor/sal.js'));
+  // var salJS = gulp.src('./node_modules/sal.js/dist/sal.js')
+  //   .pipe(gulp.dest('./vendor/sal.js'));
 
   //waypoints JS
   var waypointsJS = gulp.src('./node_modules/waypoints/lib/jquery.waypoints.min.js')
@@ -135,7 +135,7 @@ function modules() {
   var parallaxJS = gulp.src('./node_modules/parallax-js/dist/parallax.min.js')
     .pipe(gulp.dest('./vendor/parallax'));
 
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, waypointsJS, typedJS, salCSS, salJS, owlCSS, owlJS, animateCSS, parallaxJS);
+  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, waypointsJS, typedJS, owlCSS, owlJS, animateCSS, parallaxJS);
 }
 
 // CSS task

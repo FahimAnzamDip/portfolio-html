@@ -9989,10 +9989,10 @@ svg {
 }
 
 #services .owl-dots .owl-dot span {
-  width: 1.2rem;
+  width: 1rem;
   height: 0.4rem;
   transition: 0.2s all ease-out;
-  border-radius: 0.20rem;
+  border-radius: 0.15rem;
 }
 
 #services .owl-dots .owl-dot.active span {
@@ -10030,12 +10030,17 @@ svg {
 }
 
 #stats .stat-item span i {
-  color: #DEDEEA;
+  color: #c2aed9;
 }
 
 @media (max-width: 575.98px) {
   #stats .stat-item {
     margin-bottom: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  #stats .stat-item span {
+    margin-right: 0 !important;
   }
 }
 
@@ -10049,22 +10054,22 @@ svg {
   font-style: normal;
 }
 
-#works .filter_nav li {
+#works .portfolio-filter li {
   margin-right: 1.3rem;
 }
 
-#works .filter_nav li.active .filter_btn {
+#works .portfolio-filter li.active .filter_btn {
   background-color: #744CA2;
   color: #fff;
   box-shadow: 0px 0px 10px rgba(116, 76, 162, 0.2);
 }
 
-#works .filter_nav li:last-child {
+#works .portfolio-filter li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575.98px) {
-  #works .filter_nav ul {
+  #works .portfolio-filter ul {
     padding-left: 1rem;
     padding-right: 1rem;
   }
