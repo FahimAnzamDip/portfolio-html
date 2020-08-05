@@ -10348,6 +10348,10 @@ svg {
   font-size: 1.3rem;
 }
 
+#contact .mail_text {
+  font-weight: 600;
+}
+
 #footer p {
   margin-bottom: 0;
 }
