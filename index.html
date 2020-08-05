@@ -27,10 +27,18 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!--Fav Icon-->
-    <link rel="shortcut icon" href="img/favicon.svg"/>
+    <link rel="shortcut icon" href="img/favicon.png"/>
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="80">
+
+    <!--Preloader-->
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
     <!--Nav Section Start-->
     <section id="nav_bar">
@@ -45,13 +53,23 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarToggler">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link active" href="#home">Home</a>
-                        <a class="nav-item nav-link" href="#about">About</a>
-                        <a class="nav-item nav-link" href="#services">Services</a>
-                        <a class="nav-item nav-link" href="#works">Works</a>
-                        <a class="nav-item nav-link pr-0" href="#contact">Contact</a>
-                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works">Works</a>
+                        </li>
+                        <li class="nav-item pr-0">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -240,6 +258,7 @@
             </div>
             <div class="row">
                 <div class="owl-carousel owl-theme">
+
                     <div class="service_container">
                         <div class="card">
                             <div class="card-body">
@@ -254,6 +273,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="service_container">
                         <div class="card">
                             <div class="card-body">
@@ -268,20 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="service_container">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="service_icon">
-                                    <i class="fal fa-analytics"></i>
-                                </div>
-                                <div class="service_content">
-                                    <h3 class="mt-3">Analytics</h3>
-                                    <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
-                                        praesentium? Nihil eaque debitis.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="service_container">
                         <div class="card">
                             <div class="card-body">
@@ -290,6 +297,21 @@
                                 </div>
                                 <div class="service_content">
                                     <h3 class="mt-3">Speed Optimization</h3>
+                                    <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+                                        praesentium? Nihil eaque debitis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service_container">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="service_icon">
+                                    <i class="fal fa-analytics"></i>
+                                </div>
+                                <div class="service_content">
+                                    <h3 class="mt-3">SEO</h3>
                                     <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
                                         praesentium? Nihil eaque debitis.</p>
                                 </div>

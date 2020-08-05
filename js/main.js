@@ -1,4 +1,33 @@
-$(document).ready(function () {
+$(window).on('load', function () {
+	/*=========================================================================
+        Preloader
+    =========================================================================*/
+	$('.loader').fadeOut('slow');
+
+
+	//Porfolio Filter
+	$('.portfolio-filter').on('click', 'li', function () {
+		var filterValue = $(this).attr('data-filter');
+		$container.isotope({
+			filter: filterValue
+		});
+	});
+
+	// change is-checked class on buttons
+	$('.portfolio-filter').each(function (i, buttonGroup) {
+		var $buttonGroup = $(buttonGroup);
+		$buttonGroup.on('click', 'li', function () {
+			$buttonGroup.find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+
+	var $container = $('.portfolio-wrapper');
+	$('.portfolio-wrapper').isotope({
+		// options
+		itemSelector: '[class*="col-"]',
+		percentPosition: true
+	});
 
 	//Parallax Animation
 	if ($('.parallax').length > 0) {
@@ -7,6 +36,21 @@ $(document).ready(function () {
 			relativeInput: true,
 		});
 	}
+
+
+	//Wow js Scroll Animation
+	var wow = new WOW({
+		boxClass: 'wow',
+		animateClass: 'animated',
+		offset: 0,
+	});
+	wow.init();
+
+
+});
+
+
+$(document).ready(function () {
 
 	//Smooth Scrolling
 	$('a[href^="#"]:not([href="#"], a[href="#skills"], a[href="#about_me"], a[href="#experience"], a[href="#education"])').on('click', function (event) {
@@ -30,8 +74,10 @@ $(document).ready(function () {
 		}
 	);
 
+	//Menu Item click closes nav
+
 	//Onclick icon change in navbar
-	$("#menu_btn").click(function(){
+	$("#menu_btn").click(function () {
 		$('#bars').toggleClass('d-none');
 		$('#cross').toggleClass('d-none');
 	});
@@ -64,38 +110,6 @@ $(document).ready(function () {
 		loop: true,
 		backDelay: 3000
 	});
-
-	//Wow js Scroll Animation
-	var wow = new WOW(
-		{
-		  boxClass:     'wow',
-		  animateClass: 'animated',
-		  offset:       0,
-		}
-	  );
-	wow.init();
-
-	//Porfolio Filter
-	$('.portfolio-filter').on( 'click', 'li', function() {
-        var filterValue = $(this).attr('data-filter');
-        $container.isotope({ filter: filterValue });
-    });
-
-    // change is-checked class on buttons
-    $('.portfolio-filter').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'li', function() {
-            $buttonGroup.find('.active').removeClass('active');
-            $( this ).addClass('active');
-        });
-    });
-
-    var $container = $('.portfolio-wrapper');
-    $('.portfolio-wrapper').isotope({
-        // options
-        itemSelector: '[class*="col-"]',
-        percentPosition: true
-    });
 
 	//Owl Carosel
 	$(".owl-carousel").owlCarousel({
