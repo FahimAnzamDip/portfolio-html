@@ -10003,20 +10003,36 @@ svg {
   transition: 0.2s all ease;
 }
 
-#header .little_about_me ul li a i.fa-facebook-square:hover {
+#header .little_about_me ul li a i.fa-facebook-square {
   color: #3C5A99;
 }
 
-#header .little_about_me ul li a i.fa-github-square:hover {
-  color: #323131;
+#header .little_about_me ul li a i.fa-facebook-square:hover {
+  color: #2e4474;
 }
 
-#header .little_about_me ul li a i.fa-linkedin:hover {
+#header .little_about_me ul li a i.fa-github-square {
+  color: #353353;
+}
+
+#header .little_about_me ul li a i.fa-github-square:hover {
+  color: #212033;
+}
+
+#header .little_about_me ul li a i.fa-linkedin {
   color: #0077B5;
 }
 
-#header .little_about_me ul li a i.fa-twitter-square:hover {
+#header .little_about_me ul li a i.fa-linkedin:hover {
+  color: #005582;
+}
+
+#header .little_about_me ul li a i.fa-twitter-square {
   color: #1DA1F2;
+}
+
+#header .little_about_me ul li a i.fa-twitter-square:hover {
+  color: #0c85d0;
 }
 
 #header .little_about_me ul li:last-child {

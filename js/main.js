@@ -76,10 +76,13 @@ $(document).ready(function () {
 
 	//Menu Item click closes nav
 	$('.navbar-nav>li>a').on('click', function(){
-		$('.navbar-collapse').collapse('hide');
-		$('#bars').toggleClass('d-none');
-		$('#cross').toggleClass('d-none');
+		if($('.navbar-toggler').attr('aria-expanded') === 'true') {
+			$('.navbar-collapse').collapse('hide');
+			$('#bars').toggleClass('d-none');
+			$('#cross').toggleClass('d-none');
+		}	
 	});
+	
 
 	//Onclick icon change in navbar
 	$("#menu_btn").click(function () {
