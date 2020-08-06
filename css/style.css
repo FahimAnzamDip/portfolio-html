@@ -9748,6 +9748,12 @@ svg {
   padding: 0 3rem 0 0;
 }
 
+@media (max-width: 575.98px) {
+  #nav_bar .nav-item {
+    padding-right: 0;
+  }
+}
+
 #nav_bar .nav-item .nav-link {
   font-weight: 500;
   position: relative;
