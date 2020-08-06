@@ -9672,11 +9672,12 @@ svg {
 /* CSS for animated bouncing loader. */
 .loader {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #e0dede;
+  background-color: #e6e6e6;
   position: fixed;
   top: 0;
   left: 0;
@@ -9684,27 +9685,37 @@ svg {
 }
 
 /* Loader circles */
-.loader > span {
-  background: #6a197d;
-  border-radius: 50%;
-  margin: 5rem 0.5rem;
-  -webkit-animation: bouncingLoader 0.6s infinite alternate;
-  animation: bouncingLoader 0.6s infinite alternate;
+.loader .loading_balls {
+  display: flex;
+  height: 40px;
 }
 
-.loader > span:nth-child(2) {
+.loader .loading_balls span {
+  background: #6a197d;
+  border-radius: 50%;
+  margin: 2.2rem 0.5rem;
+  -webkit-animation: bouncingLoader 0.8s infinite alternate;
+  animation: bouncingLoader 0.8s infinite alternate;
+}
+
+.loader .loading_balls span:nth-child(2) {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-.loader > span:nth-child(3) {
+.loader .loading_balls span:nth-child(3) {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-.loader > span:nth-child(4) {
+.loader .loading_balls span:nth-child(4) {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
+}
+
+.loader .loading_balls span:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 /* Define the animation called bouncingLoader. */

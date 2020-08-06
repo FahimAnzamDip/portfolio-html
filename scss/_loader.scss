@@ -1,11 +1,12 @@
 /* CSS for animated bouncing loader. */
 .loader {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-color: #e0dede;
+    background-color: #e6e6e6;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,23 +14,34 @@
 }
 
 /* Loader circles */
-.loader>span {
-    background: #6a197d;
-    border-radius: 50%;
-    margin: 5rem 0.5rem;
-    animation: bouncingLoader 0.6s infinite alternate;
-}
+.loader {
+    .loading_balls {
+        display: flex;
+        height: 40px;
 
-.loader>span:nth-child(2) {
-    animation-delay: 0.2s;
-}
+        span {
+            background: #6a197d;
+            border-radius: 50%;
+            margin: 2.2rem 0.5rem;
+            animation: bouncingLoader 0.8s infinite alternate;
+        }
 
-.loader>span:nth-child(3) {
-    animation-delay: 0.4s;
-}
+        span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
 
-.loader>span:nth-child(4) {
-    animation-delay: 0.6s;
+        span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        span:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        span:nth-child(5) {
+            animation-delay: 0.8s;
+        }
+    }
 }
 
 /* Define the animation called bouncingLoader. */
