@@ -10266,9 +10266,12 @@ svg {
   padding-top: 2.7rem;
 }
 
+#works .portfolio-wrapper .gutter-sizer {
+  margin-bottom: 2.3rem;
+}
+
 #works .portfolio-wrapper .card {
   display: inline-block;
-  position: relative;
   width: 100%;
   margin-bottom: 30px;
   border-radius: 6px;
@@ -10283,7 +10286,6 @@ svg {
 
 #works .portfolio-wrapper .card .portfolio-image {
   height: 200px;
-  position: relative;
   overflow: hidden;
   margin-left: 20px;
   margin-right: 20px;
@@ -10327,6 +10329,10 @@ svg {
 #works .portfolio-wrapper .card .portfolio-details .portfolio-btn:hover {
   color: #422b5d;
   text-decoration: none;
+}
+
+#works .mr-minus {
+  margin-top: -1rem;
 }
 
 #contact {

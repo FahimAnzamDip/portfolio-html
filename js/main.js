@@ -25,8 +25,8 @@ $(window).on('load', function () {
 	var $container = $('.portfolio-wrapper');
 	$('.portfolio-wrapper').isotope({
 		// options
-		itemSelector: '[class*="col-"]',
-		percentPosition: true
+		layoutMode: 'fitRows',
+		itemSelector: '[class*="col-"]'
 	});
 
 	//Parallax Animation

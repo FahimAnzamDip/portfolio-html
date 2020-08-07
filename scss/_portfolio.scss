@@ -51,9 +51,12 @@
     .portfolio-wrapper {
         padding-top: 2.7rem;
 
+        .gutter-sizer {
+            margin-bottom: 2.3rem;
+        }
+
         .card {
             display: inline-block;
-            position: relative;
             width: 100%;
             margin-bottom: 30px;
             border-radius: 6px;
@@ -67,7 +70,6 @@
 
             .portfolio-image {
                 height: 200px;
-                position: relative;
                 overflow: hidden;
                 margin-left: 20px;
                 margin-right: 20px;
@@ -115,6 +117,10 @@
                 }
             }
         }
+    }
+
+    .mr-minus {
+        margin-top: -1rem;
     }
 
 }
