@@ -10363,14 +10363,14 @@ svg {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: -40px;
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: 0 16px 25px -12px rgba(73, 73, 73, 0.56);
 }
 
 #works .portfolio-wrapper .card .portfolio-image img {
   width: 100%;
   height: 100%;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 #works .portfolio-wrapper .card .portfolio-details .portfolio-title {
