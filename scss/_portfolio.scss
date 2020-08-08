@@ -1,5 +1,11 @@
 #works {
 
+    .mb-cs {
+        @include mobile {
+            margin-bottom: 2rem !important;
+        }
+    }
+
     .portfolio-filter {
         li {
             margin-right: 1.3rem;
@@ -53,11 +59,6 @@
 
         .gutter-sizer {
             margin-bottom: 2.4rem;
-
-            @include mobile {
-                padding-right: 25px;
-                padding-left: 25px;
-            }
         }
 
         .card {

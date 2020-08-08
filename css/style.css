@@ -2223,7 +2223,7 @@ textarea.form-control {
   padding: 0.7rem 1.5rem;
   font-size: 0.9rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -4024,7 +4024,7 @@ input[type="button"].btn-block {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus {
@@ -10281,6 +10281,12 @@ svg {
   font-style: normal;
 }
 
+@media (max-width: 575.98px) {
+  #works .mb-cs {
+    margin-bottom: 2rem !important;
+  }
+}
+
 #works .portfolio-filter li {
   margin-right: 1.3rem;
 }
@@ -10334,13 +10340,6 @@ svg {
 
 #works .portfolio-wrapper .gutter-sizer {
   margin-bottom: 2.4rem;
-}
-
-@media (max-width: 575.98px) {
-  #works .portfolio-wrapper .gutter-sizer {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
 }
 
 #works .portfolio-wrapper .card {
