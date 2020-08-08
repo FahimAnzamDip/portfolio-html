@@ -10267,7 +10267,14 @@ svg {
 }
 
 #works .portfolio-wrapper .gutter-sizer {
-  margin-bottom: 2.3rem;
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 575.98px) {
+  #works .portfolio-wrapper .gutter-sizer {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 #works .portfolio-wrapper .card {
@@ -10332,7 +10339,7 @@ svg {
 }
 
 #works .mr-minus {
-  margin-top: -1rem;
+  margin-top: -2rem;
 }
 
 #contact {
