@@ -120,9 +120,9 @@ $(document).ready(function () {
 	});
 
 	//Owl Carosel
-	$(".owl-carousel").owlCarousel({
+	$("#service_slider").owlCarousel({
 		loop: true,
-		margin: 30,
+		margin: 33,
 		responsiveClass: true,
 		stagePadding: 20,
 		autoplay: true,
