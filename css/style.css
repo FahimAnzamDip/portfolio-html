@@ -10474,6 +10474,23 @@ svg {
   font-weight: 600;
 }
 
+#breadcrumb {
+  background: linear-gradient(127deg, #6f2ab4 12%, #a558dc 36%, #8f40c7 62%, #a255d9 88%);
+}
+
+#breadcrumb .breadcrumb {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#breadcrumb .breadcrumb .breadcrumb-item:first-of-type {
+  font-weight: 500;
+}
+
+#breadcrumb .breadcrumb .breadcrumb-item:hover a {
+  text-decoration: none;
+}
+
 #footer p {
   margin-bottom: 0;
 }

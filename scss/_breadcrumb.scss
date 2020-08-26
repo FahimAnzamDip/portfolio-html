@@ -1,0 +1,19 @@
+#breadcrumb {
+    background: linear-gradient(127deg, rgba(111,42,180,1) 12%, rgba(165,88,220,1) 36%, rgba(143,64,199,1) 62%, rgba(162,85,217,1) 88%);
+
+    .breadcrumb {
+        background: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+        .breadcrumb-item:first-of-type {
+            font-weight: 500;
+        }
+
+        .breadcrumb-item:hover {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+}
