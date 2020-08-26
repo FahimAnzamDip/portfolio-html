@@ -5,6 +5,12 @@
         font-weight: 500;
     }
 
+    .about_img {
+        img {
+            border-radius: 0.75rem;
+        }
+    }
+
     .nav.nav-pills {
         .nav-item {
             margin-right: 1rem;
@@ -105,7 +111,7 @@
 
             span.line {
                 position: absolute;
-                width: 1px;
+                width: 2px;
                 background-color: lighten($color: $theme-color, $amount: 30);
                 top: 30px;
                 bottom: 30px;
