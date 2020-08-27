@@ -9571,7 +9571,8 @@ button:focus {
   box-shadow: none !important;
 }
 
-a.btn:active, a.btn:focus {
+a.btn:active,
+a.btn:focus {
   outline: 0;
   box-shadow: none !important;
 }
@@ -9668,6 +9669,25 @@ hr {
 svg {
   overflow: hidden;
   vertical-align: middle;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #1f1f1f;
+  visibility: visible;
 }
 
 /* CSS for animated bouncing loader. */
