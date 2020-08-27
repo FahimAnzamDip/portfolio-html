@@ -27,7 +27,7 @@ const banner = ['/*\n',
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./dist"
     },
     port: 3000
   });
@@ -42,100 +42,55 @@ function browserSyncReload(done) {
 
 // Clean vendor
 function clean() {
-  return del(["./vendor/"]);
+  return del(["./dist/vendor/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap JS
   var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/*')
-    .pipe(gulp.dest('./vendor/bootstrap/js'));
+    .pipe(gulp.dest('./dist/vendor/bootstrap/js'));
 
   // Bootstrap SCSS
   var bootstrapSCSS = gulp.src('./node_modules/bootstrap/scss/**/*')
-    .pipe(gulp.dest('./vendor/bootstrap/scss'));
-
-  // ChartJS
-//   var chartJS = gulp.src('./node_modules/chart.js/dist/*.js')
-//     .pipe(gulp.dest('./vendor/chart.js'));
-
-  // SweetAlert2 JS
-  // var sweetAlertJS = gulp.src('./node_modules/sweetalert2/dist/*.js')
-  //   .pipe(gulp.dest('./vendor/sweetalert/js'));
-
-  // SweetAlert2 JS
-  // var sweetAlertCSS = gulp.src('./node_modules/sweetalert2/dist/*.css')
-  //   .pipe(gulp.dest('./vendor/sweetalert/css'));
+    .pipe(gulp.dest('./dist/vendor/bootstrap/scss'));
 
   // Owl Carousel JS
   var owlJS = gulp.src('./node_modules/owl.carousel/dist/owl.carousel.min.js')
-    .pipe(gulp.dest('./vendor/owl/js'));
+    .pipe(gulp.dest('./dist/vendor/owl/js'));
 
   // Owl Carousel JS
   var owlCSS = gulp.src('./node_modules/owl.carousel/dist/assets/*.min.css')
-    .pipe(gulp.dest('./vendor/owl/css'));
+    .pipe(gulp.dest('./dist/vendor/owl/css'));
 
   //Animate.css
   var animateCSS = gulp.src('./node_modules/animate.css/*.css')
-    .pipe(gulp.dest('./vendor/animate.css'));
-
-    
-  //Sal CSS
-  // var salCSS = gulp.src('./node_modules/sal.js/dist/sal.css')
-  // .pipe(gulp.dest('./vendor/sal.js'));
-
-  
-  //Sal JS
-  // var salJS = gulp.src('./node_modules/sal.js/dist/sal.js')
-  //   .pipe(gulp.dest('./vendor/sal.js'));
+    .pipe(gulp.dest('./dist/vendor/animate.css'));
 
   //waypoints JS
   var waypointsJS = gulp.src('./node_modules/waypoints/lib/jquery.waypoints.min.js')
-  .pipe(gulp.dest('./vendor/waypoints'));
-  // dataTables
-//   var dataTables = gulp.src([
-//       './node_modules/datatables.net/js/*.js',
-//       './node_modules/datatables.net-bs4/js/*.js',
-//       './node_modules/datatables.net-bs4/css/*.css'
-//     ])
-//     .pipe(gulp.dest('./vendor/datatables'));
-
-  // Smooth scroll js
-  // var smoothScroll = gulp.src('./node_modules/smooth-scroll/dist/smooth-scroll.min.js')
-  //   .pipe(gulp.dest('./vendor/smooth-scroll'));
+  .pipe(gulp.dest('./dist/vendor/waypoints'));
 
   // Typed js
   var typedJS = gulp.src('./node_modules/typed.js/lib/typed.min.js')
-  .pipe(gulp.dest('./vendor/typedjs'));
-
-  // Font Awesome
-  var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
-    .pipe(gulp.dest('./vendor'));
-
-  // Parsly JS
-  // var parsleyJS = gulp.src('./node_modules/parsleyjs/dist/*.js')
-  //   .pipe(gulp.dest('./vendor/parsleyjs'));
-
-  // Particles JS
-  // var particlesJS = gulp.src('./node_modules/particles.js/particles.js')
-  // .pipe(gulp.dest('./vendor/particles'));
+  .pipe(gulp.dest('./dist/vendor/typedjs'));
 
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
-    .pipe(gulp.dest('./vendor/jquery-easing'));
+    .pipe(gulp.dest('./dist/vendor/jquery-easing'));
 
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
-    .pipe(gulp.dest('./vendor/jquery'));
+    .pipe(gulp.dest('./dist/vendor/jquery'));
 
   // Parallax js
   var parallaxJS = gulp.src('./node_modules/parallax-js/dist/parallax.min.js')
-    .pipe(gulp.dest('./vendor/parallax'));
+    .pipe(gulp.dest('./dist/vendor/parallax'));
 
-  return merge(bootstrapJS, bootstrapSCSS, fontAwesome, jquery, jqueryEasing, waypointsJS, typedJS, owlCSS, owlJS, animateCSS, parallaxJS);
+  return merge(bootstrapJS, bootstrapSCSS, jquery, jqueryEasing, waypointsJS, typedJS, owlCSS, owlJS, animateCSS, parallaxJS);
 }
 
 // CSS task
@@ -154,12 +109,12 @@ function css() {
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./dist/css"))
     .pipe(rename({
       suffix: ".min"
     }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("./dist/css"))
     .pipe(browsersync.stream());
 }
 
@@ -177,7 +132,7 @@ function js() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(browsersync.stream());
 }
 
@@ -185,7 +140,7 @@ function js() {
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
-  gulp.watch("./**/*.html", browserSyncReload);
+  gulp.watch("./dist/**/*.html", browserSyncReload);
 }
 
 // Define complex tasks
