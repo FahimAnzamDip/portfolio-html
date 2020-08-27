@@ -52,6 +52,25 @@ $(window).on('load', function () {
 
 $(document).ready(function () {
 
+	//Lazy Load Images
+	var images = document.querySelectorAll("img");
+
+	var imgOptions = {};
+	var imgObserver = new IntersectionObserver(function (entries, imgObserver) {
+	entries.forEach(function (entry) {
+		if (!entry.isIntersecting) return;
+
+		var img = entry.target;
+		img.src = img.src.replace("_low", "_high");
+		imgObserver.unobserve(entry.target);
+	});
+	}, imgOptions);
+
+	images.forEach(function (img) {
+		imgObserver.observe(img);
+	});
+
+
 	//Smooth Scrolling
 	$('a[href^="#"]:not([href="#"], a[href="#skills"], a[href="#about_me"], a[href="#experience"], a[href="#education"])').on('click', function (event) {
 		var $anchor = $(this);
