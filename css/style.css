@@ -9894,6 +9894,12 @@ svg {
   z-index: -1;
 }
 
+@media (max-width: 375px) {
+  #header .parallax {
+    display: none;
+  }
+}
+
 #header .parallax .layer {
   position: absolute;
 }
@@ -10054,6 +10060,18 @@ svg {
 @media (max-width: 575.98px) {
   #header .call_to_action a {
     margin-right: 1rem;
+  }
+  #header .call_to_action a.last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #header .call_to_action a {
+    margin-right: 0;
+  }
+  #header .call_to_action a.last-child {
+    display: none;
   }
 }
 

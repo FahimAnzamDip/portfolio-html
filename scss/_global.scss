@@ -62,6 +62,12 @@ hr {
     }
 }
 
+@mixin small-mobile {
+    @media (max-width: #{$super-small-mobile}) {
+        @content;
+    }
+}
+
 .go_to_top {
     position: fixed;
     right: 25px;

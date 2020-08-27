@@ -13,6 +13,10 @@
         width: 100%;
         z-index: -1;
 
+        @include small-mobile {
+            display: none;
+        }
+
         .layer {
             position: absolute;
         }
@@ -164,6 +168,20 @@
         .call_to_action {
             a {
                 margin-right: 1rem;
+            }
+            a.last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @include small-mobile {
+        .call_to_action {
+            a {
+                margin-right: 0;
+            }
+            a.last-child {
+                display: none;
             }
         }
     }
