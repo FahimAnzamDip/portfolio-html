@@ -59,7 +59,7 @@ function modules() {
   var owlJS = gulp.src('./node_modules/owl.carousel/dist/owl.carousel.min.js')
     .pipe(gulp.dest('./dist/vendor/owl/js'));
 
-  // Owl Carousel JS
+  // Owl Carousel CSS
   var owlCSS = gulp.src('./node_modules/owl.carousel/dist/assets/*.min.css')
     .pipe(gulp.dest('./dist/vendor/owl/css'));
 
