@@ -8,6 +8,7 @@
         "deploy": "gh-pages -d dist"
     },
     "author": "Fahim Anzam Dip",
+    "homepage": "https://fahimanzamdip.github.io/portfolio",
     "license": "MIT",
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
