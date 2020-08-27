@@ -54,7 +54,6 @@ $(document).ready(function () {
 
 	//Lazy Load Images
 	var images = document.querySelectorAll("img");
-
 	var imgOptions = {};
 	var imgObserver = new IntersectionObserver(function (entries, imgObserver) {
 	entries.forEach(function (entry) {
