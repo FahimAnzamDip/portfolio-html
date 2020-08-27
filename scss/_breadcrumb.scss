@@ -1,5 +1,8 @@
 #breadcrumb {
-    background: linear-gradient(127deg, rgba(111,42,180,1) 12%, rgba(165,88,220,1) 36%, rgba(143,64,199,1) 62%, rgba(162,85,217,1) 88%);
+    background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     .breadcrumb {
         background: #ffffff;

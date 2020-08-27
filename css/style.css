@@ -10291,6 +10291,36 @@ svg {
   }
 }
 
+#works .pagination {
+  margin-bottom: 0;
+}
+
+#works .pagination .page-item {
+  margin-right: 1rem;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
+#works .pagination .page-item .page-link {
+  border: 0;
+  border-radius: 50% !important;
+  background-color: #F9F9FF;
+  box-shadow: 0px 0px 10px rgba(116, 76, 162, 0.2);
+}
+
+#works .pagination .page-item.active .page-link {
+  background-color: #744CA2;
+}
+
+#works .pagination .page-item.disabled {
+  display: none;
+}
+
+#works .pagination .page-item:last-child {
+  margin-right: 0;
+}
+
 #works .portfolio-filter li {
   margin-right: 1.3rem;
 }
@@ -10475,7 +10505,11 @@ svg {
 }
 
 #breadcrumb {
-  background: linear-gradient(127deg, #6f2ab4 12%, #a558dc 36%, #8f40c7 62%, #a255d9 88%);
+  background: #cc2b5e;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #753a88, #cc2b5e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #breadcrumb .breadcrumb {

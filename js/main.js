@@ -65,9 +65,9 @@ $(document).ready(function () {
 	$(".js--start-sticky-nav").waypoint(
 		function (direction) {
 			if (direction == "down") {
-				$("nav").addClass("sticky");
+				$("#main_nav").addClass("sticky");
 			} else {
-				$("nav").removeClass("sticky");
+				$("#main_nav").removeClass("sticky");
 			}
 		}, {
 			offset: "80px"

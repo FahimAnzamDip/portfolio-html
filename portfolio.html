@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Fahim Anzam</title>
+    <title>Fahim Anzam - Portfolio</title>
 
     <!-- Google fonts for this template-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!--Fav Icon-->
-    <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="shortcut icon" href="img/favicon.png" />
 </head>
 
 <body id="works" data-spy="scroll" data-target=".navbar" data-offset="80">
@@ -35,7 +35,24 @@
     <!--Preloader-->
     <div class="loader">
         <div>
-            <svg style="width: 64px; height: 64px;" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"><defs><style>.cls-1{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="-1.72" y1="5.77" x2="33.72" y2="26.23" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f0f"/><stop offset="1" stop-color="#662d91"/></linearGradient></defs><title>loader_img</title><path class="cls-1" d="M28.17,0H3.83A3.82,3.82,0,0,0,0,3.83V28.17A3.82,3.82,0,0,0,3.83,32H28.17A3.82,3.82,0,0,0,32,28.17V3.83A3.82,3.82,0,0,0,28.17,0ZM21.8,17.9h-8l-2,8H7.16l3.22-13H23.05Zm1.79-7.24H10.91l1.25-5.07H24.84Z"/></svg>
+            <svg style="width: 64px; height: 64px;" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: url(#linear-gradient);
+                        }
+                    </style>
+                    <linearGradient id="linear-gradient" x1="-1.72" y1="5.77" x2="33.72" y2="26.23"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#f0f" />
+                        <stop offset="1" stop-color="#662d91" />
+                    </linearGradient>
+                </defs>
+                <title>loader_img</title>
+                <path class="cls-1"
+                    d="M28.17,0H3.83A3.82,3.82,0,0,0,0,3.83V28.17A3.82,3.82,0,0,0,3.83,32H28.17A3.82,3.82,0,0,0,32,28.17V3.83A3.82,3.82,0,0,0,28.17,0ZM21.8,17.9h-8l-2,8H7.16l3.22-13H23.05Zm1.79-7.24H10.91l1.25-5.07H24.84Z" />
+            </svg>
         </div>
         <div class="loading_balls">
             <span></span>
@@ -48,14 +65,46 @@
 
     <!--Nav Section Start-->
     <section id="nav_bar">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav id="main_nav" class="navbar navbar-expand-md navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img width="200" class="img-fluid" src="img/logo.png"
                         alt=""></a>
 
-                <button id="menu_btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg id="bars" style="width: 30px; height: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path fill="#7851A5" d="M16 288h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16z" class="fa-secondary"/><path d="M432 384H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 80v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16z" fill="#7851A5" class="fa-primary"/></svg>
-                    <svg id="cross" class="d-none" style="width: 30px; height: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path fill="#7851A5" d="M9.21,356.07a31.46,31.46,0,0,0,0,44.48l22.24,22.24a31.46,31.46,0,0,0,44.48,0L176,322.72,109.28,256ZM342.79,111.45,320.55,89.21a31.46,31.46,0,0,0-44.48,0L176,189.28,242.72,256,342.79,155.93a31.46,31.46,0,0,0,0-44.48Z" class="fa-secondary"/><path d="M342.79,356.07a31.46,31.46,0,0,1,0,44.48l-22.24,22.24a31.46,31.46,0,0,1-44.48,0L9.21,155.93a31.46,31.46,0,0,1,0-44.48L31.45,89.21a31.46,31.46,0,0,1,44.48,0Z" fill="#7851A5" class="fa-primary"/></svg>
+                <button id="menu_btn" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg id="bars" style="width: 30px; height: 30px;" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path fill="#7851A5"
+                            d="M16 288h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16z"
+                            class="fa-secondary" />
+                        <path
+                            d="M432 384H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 80v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16z"
+                            fill="#7851A5" class="fa-primary" />
+                    </svg>
+                    <svg id="cross" class="d-none" style="width: 30px; height: 30px;" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 352 512">
+                        <defs>
+                            <style>
+                                .fa-secondary {
+                                    opacity: .4
+                                }
+                            </style>
+                        </defs>
+                        <path fill="#7851A5"
+                            d="M9.21,356.07a31.46,31.46,0,0,0,0,44.48l22.24,22.24a31.46,31.46,0,0,0,44.48,0L176,322.72,109.28,256ZM342.79,111.45,320.55,89.21a31.46,31.46,0,0,0-44.48,0L176,189.28,242.72,256,342.79,155.93a31.46,31.46,0,0,0,0-44.48Z"
+                            class="fa-secondary" />
+                        <path
+                            d="M342.79,356.07a31.46,31.46,0,0,1,0,44.48l-22.24,22.24a31.46,31.46,0,0,1-44.48,0L9.21,155.93a31.46,31.46,0,0,1,0-44.48L31.45,89.21a31.46,31.46,0,0,1,44.48,0Z"
+                            fill="#7851A5" class="fa-primary" />
+                    </svg>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarToggler">
@@ -313,33 +362,38 @@
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
             <div class="row">
+                <!-- Pagination start -->
                 <div class="col-12 d-flex justify-content-center">
-                    <nav>
-                        <ul class="pagination">
-                          <li class="page-item disabled">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item active">
-                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                          </li>
-                        </ul>
-                    </nav>
+                    <div class="mr-minus">
+                        <nav>
+                            <ul class="pagination">
+                                <li class="page-item disabled" aria-disabled="true" aria-label="Previous">
+                                    <span class="page-link" aria-hidden="true"><i class="fad fa-arrow-left"></i></span>
+                                </li>
+    
+                                <li class="page-item active" aria-current="page">
+                                    <span class="page-link">1</span>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript:void(0)">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript:void(0)">3</a>
+                                </li>
+    
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript:void(0)" rel="next"
+                                        aria-label="Next"><i class="fad fa-arrow-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
+                <!-- Pagination End -->
             </div>
         </div>
     </section>
@@ -359,12 +413,14 @@
                     <div class="contact_note">
                         <div class="contact_note_top mb-5">
                             <h4>Quick Contact</h4>
-                            <p>Don't like forms? Send me an <a href="mailto:dfahimanzam@gmail.com?subject=I want to discuss" target="_blank"  class="mail_text">email</a>. <i class="far fa-smile-beam"></i></p>
+                            <p>Don't like forms? Send me an <a
+                                    href="mailto:dfahimanzam@gmail.com?subject=I want to discuss" target="_blank"
+                                    class="mail_text">email</a>. <i class="far fa-smile-beam"></i></p>
                         </div>
 
                         <div class="contact_note_bottom mb-5">
                             <div class="contact_info mb-4 d-flex flex-wrap align-items-center">
-                                <span class="text-primary mr-3"><i class="fad fa-envelope-open"></i></span> 
+                                <span class="text-primary mr-3"><i class="fad fa-envelope-open"></i></span>
                                 <div>
                                     <h6>Email</h6>
                                     <p>dfahimanzam@gmail.com</p>
@@ -372,7 +428,7 @@
                             </div>
 
                             <div class="contact_info mb-4 d-flex flex-wrap align-items-center">
-                                <span class="text-primary mr-3"><i class="fad fa-phone-alt"></i></span> 
+                                <span class="text-primary mr-3"><i class="fad fa-phone-alt"></i></span>
                                 <div>
                                     <h6>Phone</h6>
                                     <p>+880172765933</p>
@@ -413,7 +469,8 @@
                                 placeholder=""></textarea>
                         </div>
 
-                        <button class="btn btn-primary" type="submit" name="message_posted"><i class="fad fa-paper-plane"></i> Send</button>
+                        <button class="btn btn-primary" type="submit" name="message_posted"><i
+                                class="fad fa-paper-plane"></i> Send</button>
                     </form>
                 </div>
             </div>
