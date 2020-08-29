@@ -90,7 +90,11 @@ function modules() {
   var parallaxJS = gulp.src('./node_modules/parallax-js/dist/parallax.min.js')
     .pipe(gulp.dest('./dist/vendor/parallax'));
 
-  return merge(bootstrapJS, bootstrapSCSS, jquery, jqueryEasing, waypointsJS, typedJS, owlCSS, owlJS, animateCSS, parallaxJS);
+  // Hamburger SCSS
+  var hamburgersSCSS = gulp.src('./node_modules/hamburgers/_sass/hamburgers/**/*')
+  .pipe(gulp.dest('./dist/vendor/hamburgers/scss'));
+
+  return merge(bootstrapJS, bootstrapSCSS, jquery, jqueryEasing, waypointsJS, typedJS, owlCSS, owlJS, animateCSS, parallaxJS, hamburgersSCSS);
 }
 
 // CSS task

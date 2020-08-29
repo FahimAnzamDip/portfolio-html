@@ -1,6 +1,9 @@
 // Import Custom Variables (Overrides Default Bootstrap Variables)
 @import "variables.scss";
 
+//Hambugers
+@import "../dist/vendor/hamburgers/scss/hamburgers.scss";
+
 // Import Bootstrap
 @import "../dist/vendor/bootstrap/scss/bootstrap.scss";
 

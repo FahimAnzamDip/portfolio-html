@@ -96,16 +96,14 @@ $(document).ready(function () {
 	$('.navbar-nav>li>a').on('click', function(){
 		if($('.navbar-toggler').attr('aria-expanded') === 'true') {
 			$('.navbar-collapse').collapse('hide');
-			$('#bars').toggleClass('d-none');
-			$('#cross').toggleClass('d-none');
+			$('#menu_btn').toggleClass('is-active');
 		}	
 	});
 	
 
 	//Onclick icon change in navbar
 	$("#menu_btn").click(function () {
-		$('#bars').toggleClass('d-none');
-		$('#cross').toggleClass('d-none');
+		$(this).toggleClass('is-active');
 	});
 
 	//Counter Up Stats
