@@ -11,7 +11,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        z-index: -1;
+        z-index: -99;
 
         @include small-mobile {
             display: none;
@@ -112,6 +112,10 @@
         font-weight: 600;
         font-size: 3.7rem;
 
+        .typed-cursor {
+            font-size: 2rem;
+        }
+
         @include mobile {
             font-size: 2.8rem;
         }
@@ -179,21 +183,13 @@
         .call_to_action {
             a {
                 margin-right: 0;
+                display: block;
+                margin-bottom: 1rem;
             }
             a.last-child {
-                display: none;
+                margin-bottom: 0;
             }
         }
     }
-
-}
-
-#particles-js {
-    position: absolute;
-    top: 88px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
 
 }

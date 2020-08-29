@@ -9911,7 +9911,7 @@ svg {
   top: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: -99;
 }
 
 @media (max-width: 375px) {
@@ -10022,6 +10022,10 @@ svg {
   font-size: 3.7rem;
 }
 
+#header .hero_heading_title .typed-cursor {
+  font-size: 2rem;
+}
+
 @media (max-width: 575.98px) {
   #header .hero_heading_title {
     font-size: 2.8rem;
@@ -10089,19 +10093,12 @@ svg {
 @media (max-width: 375px) {
   #header .call_to_action a {
     margin-right: 0;
+    display: block;
+    margin-bottom: 1rem;
   }
   #header .call_to_action a.last-child {
-    display: none;
+    margin-bottom: 0;
   }
-}
-
-#particles-js {
-  position: absolute;
-  top: 88px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
 }
 
 #about {
@@ -10126,6 +10123,13 @@ svg {
   }
 }
 
+@media (max-width: 375px) {
+  #about .nav.nav-pills .nav-item {
+    margin-right: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
 #about .nav.nav-pills .nav-item .nav-link {
   color: #333333;
   font-weight: 500;
@@ -10143,12 +10147,24 @@ svg {
   margin-right: 0;
 }
 
+@media (max-width: 375px) {
+  #about .nav.nav-pills .nav-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #about .tab-content .tab-pane#about_me, #about .tab-content .tab-pane#skills, #about .tab-content .tab-pane#experience {
+    margin-top: -1.5rem !important;
+  }
+}
+
 #about #skills ul li {
   font-weight: 500;
   padding: 0.5rem 0.7rem;
   font-size: 0.9rem;
   margin-right: 1.5rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;

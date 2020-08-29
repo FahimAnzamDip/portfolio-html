@@ -129,13 +129,16 @@ $(document).ready(function () {
 		}
 	);
 
+	//Typed Js
 	var typed = new Typed("#typed", {
-		strings: ["Developer.", "Designer."],
+		strings: ["Developer", "Designer"],
 		backSpeed: 30,
 		typeSpeed: 50,
 		loop: true,
 		backDelay: 3000
 	});
+	$('.typed-cursor').html('_');
+
 
 	//Owl Carosel
 	$("#service_slider").owlCarousel({
