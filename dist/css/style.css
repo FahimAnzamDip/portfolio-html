@@ -59,7 +59,7 @@
   width: 30px;
   height: 3px;
   background-color: #744CA2;
-  border-radius: 10px;
+  border-radius: 4px;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
