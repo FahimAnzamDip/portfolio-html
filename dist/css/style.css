@@ -11479,7 +11479,7 @@ svg {
   transition: 0.3s all ease;
 }
 
-#works .portfolio-wrapper .card .portfolio-details .portfolio-btn:nth-child(2) {
+#works .portfolio-wrapper .card .portfolio-details .portfolio-btn:last-child {
   margin-right: 0;
 }
 
